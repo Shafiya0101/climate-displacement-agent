@@ -33,7 +33,7 @@ def _save_memory(items: list[dict]) -> None:
 
 
 # ------------------------------------------------------------------- tool 1
-def search_displacement_corpus(query: str, top_k: int = 5) -> str:
+def search_displacement_corpus(query: str, top_k: int | None = None) -> str:
     """Search the indexed climate-displacement document corpus (IDMC, World Bank
     Groundswell, IPCC AR6, UNHCR, regional case studies) using hybrid retrieval
     (BM25 + dense + RRF) followed by cross-encoder reranking.
@@ -48,7 +48,9 @@ def search_displacement_corpus(query: str, top_k: int = 5) -> str:
     Example: query="annual number of people displaced by weather-related disasters"
     """
     try:
-        passages = hybrid_retrieve(query, top_k=top_k)
+        # Cap at config.TOP_K: the model may request more, but the
+        # provider's per-minute token limit is the real constraint.
+        passages = hybrid_retrieve(query, top_k=min(top_k or config.TOP_K, config.TOP_K))
         if not passages:
             return "No matching passages in the corpus. Consider web_search."
         return format_context(passages)
