@@ -10,6 +10,26 @@ critic before returning it.
 
 ---
 
+## Live demo
+
+**Deployed app:** https://huggingface.co/spaces/Shafiya1234/climate-displacement-agent
+
+The interface shows each run as a chain of custody (L1 filter -> L4 gate + tools
+-> reasoning -> critic), renders the answer as a document with clickable `[S<n>]`
+citations, and carries a persistent AI-disclosure notice (EU AI Act Art. 50).
+
+Try the **Security probe** example: it is refused by the L1 input filter in under
+a second, at zero token cost, before the model is ever called.
+
+To run the same interface locally:
+
+```bash
+pip install -r requirements-web.txt
+uvicorn app:app --port 7860
+```
+
+---
+
 ## Quick start
 
 ```bash
