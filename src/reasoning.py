@@ -14,7 +14,9 @@ nothing â€” zero tokens, zero latency, task nominally complete.
 """
 from __future__ import annotations
 
+import os
 import re
+import time
 from typing import Any
 
 import numpy as np
@@ -203,6 +205,11 @@ def self_consistency_synthesis(question: str, context: str, budget: TokenBudget,
     paths: list[str] = []
     for i in range(k):
         temp = 0.1 if k == 1 else config.SC_TEMPERATURE
+        if i:
+            # Self-consistency fires k calls back to back. On a low
+            # tokens-per-minute tier that alone can breach the window, so we
+            # space the paths out rather than relying on SDK retries.
+            time.sleep(float(os.getenv("SC_PATH_DELAY", "8")))
         msg = chat(messages, model=config.SYNTH_MODEL, temperature=temp,
                    budget=budget, span_name=f"synthesis_path_{i+1}")
         paths.append(msg.content or "")

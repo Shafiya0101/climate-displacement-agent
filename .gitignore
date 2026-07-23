@@ -8,3 +8,7 @@ data/memory.json
 data/runs.jsonl
 eval/results_*.json
 .pytest_cache/
+
+# large source PDFs — kept locally, not in the repo
+data/corpus/*.pdf
+eval/backup_8doc/
