@@ -73,8 +73,11 @@ def _execute(job_id: str, question: str) -> None:
             detail += ("  ·  The configured model no longer exists at the provider. "
                        "List current models and update TOOL_MODEL / SYNTH_MODEL / "
                        "CRITIC_MODEL in .env.")
+        elif "per day" in low or "tpd" in low:
+            detail += ("  ·  Daily token quota exhausted for this model. Waiting will "
+                       "not help until the quota resets; switch the model in .env.")
         elif "rate" in low and "limit" in low:
-            detail += "  ·  Provider rate limit. Wait a minute and run it again."
+            detail += "  ·  Per-minute rate limit. Wait a minute and run it again."
         elif "api_key" in low or "authentication" in low:
             detail += "  ·  GROQ_API_KEY is missing or rejected."
         _set(job_id, status="error", error=detail,
