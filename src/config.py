@@ -1,4 +1,4 @@
-"""Central configuration. Everything tunable lives here, nothing is hard-coded elsewhere."""
+﻿"""Central configuration. Everything tunable lives here, nothing is hard-coded elsewhere."""
 import os
 from pathlib import Path
 
@@ -40,8 +40,8 @@ RERANK_MODEL = os.getenv("RERANK_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
 PARENT_WORDS = int(os.getenv("PARENT_WORDS", "800"))   # returned to the LLM
 CHILD_WORDS = int(os.getenv("CHILD_WORDS", "200"))     # indexed for retrieval
 CHILD_OVERLAP = int(os.getenv("CHILD_OVERLAP", "40"))
-K_CANDIDATES = 15   # hybrid retrieve this many children
-TOP_K = 5           # cross-encoder keeps this many parents
+K_CANDIDATES = int(os.getenv("K_CANDIDATES", "15"))   # hybrid candidate pool
+TOP_K = int(os.getenv("TOP_K", "5"))                 # parents returned to the LLM
 RRF_K = 60          # the 60 in 1/(60+rank)
 
 # --- agent ---------------------------------------------------------------

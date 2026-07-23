@@ -1,11 +1,11 @@
-"""The critic agent — the second agent role (Generator-Critic pattern).
+﻿"""The critic agent â€” the second agent role (Generator-Critic pattern).
 
 This is RLAIF at small scale: an AI evaluator applying a written constitution to
 another model's output. The critic never answers the question; it audits the
 answer against the context and emits a visible verdict.
 
 It runs two layers:
-  1. deterministic checks (citation existence, invented figures, format) — free,
+  1. deterministic checks (citation existence, invented figures, format) â€” free,
      cannot hallucinate;
   2. an LLM critic for semantic support of each claim.
 Deterministic findings override the LLM verdict, because a regex that finds a
@@ -68,7 +68,7 @@ def deterministic_checks(answer: str, context: str) -> list[str]:
 
 
 def review(question: str, answer: str, context: str, budget: TokenBudget) -> dict:
-    """Returns a visible verdict dict. Never raises — a critic failure must not
+    """Returns a visible verdict dict. Never raises â€” a critic failure must not
     take down the run, it downgrades to the deterministic verdict."""
     hard = deterministic_checks(answer, context)
 
@@ -80,7 +80,7 @@ def review(question: str, answer: str, context: str, budget: TokenBudget) -> dic
                  f"QUESTION:\n{question}\n\nCONTEXT:\n{context}\n\n"
                  f"ANSWER UNDER REVIEW:\n{answer}"}],
             model=config.CRITIC_MODEL, temperature=0.0, budget=budget,
-            span_name="critic_review", max_tokens=700)
+            span_name="critic_review", max_tokens=400)
         text = msg.content or ""
         m = re.search(r"VERDICT\s*:?\s*\**\s*(PASS|REVISE)", text, re.IGNORECASE)
         llm_verdict = m.group(1).upper() if m else "PASS"

@@ -1,8 +1,8 @@
-"""Block 3: few-shot CoT + Self-Consistency.
+﻿"""Block 3: few-shot CoT + Self-Consistency.
 
 The synthesis prompt fixes the reasoning FORMAT
 (EVIDENCE / ANALYSIS / CONCLUSION / CONFIDENCE) because:
-  * EVIDENCE makes the reasoning auditable — the critic can check each line
+  * EVIDENCE makes the reasoning auditable â€” the critic can check each line
     against the retrieved context independently;
   * ANALYSIS forces decomposition before the model commits to an answer;
   * CONFIDENCE is a control signal, not decoration: LOW triggers another
@@ -10,7 +10,7 @@ The synthesis prompt fixes the reasoning FORMAT
 
 The performance measure below is a reward function, so it names the failure
 modes explicitly. "Answer the question efficiently" is maximised by returning
-nothing — zero tokens, zero latency, task nominally complete.
+nothing â€” zero tokens, zero latency, task nominally complete.
 """
 from __future__ import annotations
 
@@ -32,20 +32,20 @@ except ImportError:
 SYNTHESIS_SYSTEM_PROMPT = """You are a climate displacement research analyst supporting humanitarian \
 programme officers who must justify allocation decisions in writing.
 
-PERFORMANCE MEASURE — you are judged on all four, not on speed:
-1. ACCURACY — every factual claim traces to a specific [S<n>] passage in the provided context.
-2. COMPLETENESS — address every part of the question, including the parts the context cannot answer.
-3. CALIBRATION — state confidence and justify it in one sentence.
-4. TRACEABILITY — the analyst must be able to check each claim without re-reading the corpus.
+PERFORMANCE MEASURE â€” you are judged on all four, not on speed:
+1. ACCURACY â€” every factual claim traces to a specific [S<n>] passage in the provided context.
+2. COMPLETENESS â€” address every part of the question, including the parts the context cannot answer.
+3. CALIBRATION â€” state confidence and justify it in one sentence.
+4. TRACEABILITY â€” the analyst must be able to check each claim without re-reading the corpus.
 
 EXPLICITLY FORBIDDEN (these are graded as failures, not as efficiency):
 - Returning an empty or near-empty answer when the context contains relevant passages.
 - Citing an [S<n>] identifier that does not appear in the context.
 - Stating a number that is not in the context.
 - Reporting CONFIDENCE: HIGH when the claim rests on a single source.
-- Silently omitting a sub-question you could not answer — say "not covered by the retrieved context".
+- Silently omitting a sub-question you could not answer â€” say "not covered by the retrieved context".
 
-OUTPUT FORMAT — use exactly these four sections, in this order:
+OUTPUT FORMAT â€” use exactly these four sections, in this order:
 
 EVIDENCE
 - [S<n>] <source name>: <the specific fact, with its figure and year if present>
@@ -69,7 +69,7 @@ QUESTION: Is annual disaster displacement rising because disasters are worsening
 
 EVIDENCE
 - [S1] idmc_global_report: weather-related hazards account for the large majority of new internal displacements; floods and storms dominate.
-- [S1] idmc_global_report: the count measures movements, not people — one person displaced three times counts three times.
+- [S1] idmc_global_report: the count measures movements, not people â€” one person displaced three times counts three times.
 - [S4] bangladesh_delta: pre-emptive mass evacuation is a major driver of totals in Bangladesh and the Philippines.
 
 ANALYSIS
@@ -88,20 +88,20 @@ CRITIC_SYSTEM_PROMPT = """You are a verification critic. You do not answer the q
 another agent's answer against the context it was given.
 
 Check, in order:
-1. GROUNDING — does every [S<n>] cited actually exist in the context, and does the cited passage
+1. GROUNDING â€” does every [S<n>] cited actually exist in the context, and does the cited passage
    support the claim attached to it?
-2. NUMBERS — is every figure in the answer present in the context? Invented or altered figures are
+2. NUMBERS â€” is every figure in the answer present in the context? Invented or altered figures are
    the most serious failure.
-3. FORMAT — are all four sections present (EVIDENCE, ANALYSIS, CONCLUSION, CONFIDENCE)?
-4. CALIBRATION — is CONFIDENCE: HIGH claimed on the basis of a single source? That is an automatic
+3. FORMAT â€” are all four sections present (EVIDENCE, ANALYSIS, CONCLUSION, CONFIDENCE)?
+4. CALIBRATION â€” is CONFIDENCE: HIGH claimed on the basis of a single source? That is an automatic
    downgrade.
-5. COMPLETENESS — is any part of the question left unaddressed without being flagged as uncovered?
+5. COMPLETENESS â€” is any part of the question left unaddressed without being flagged as uncovered?
 
 Reply in exactly this format:
 
 VERDICT: PASS | REVISE
 ISSUES:
-- <one line per issue, citing the offending claim; write "none" if there are none>
+- <at most 4 lines. Report ONLY unsupported claims, invented figures, missing sections of the four-section schema, or miscalibrated confidence. Do NOT list topics the answer could have covered. Write "none" if there are none.>
 RECOMMENDED_CONFIDENCE: HIGH | MEDIUM | LOW
 """
 
@@ -135,7 +135,7 @@ def get_client():
 
 def chat(messages: list[dict], model: str | None = None, temperature: float = 0.0,
          tools_schema: list[dict] | None = None, budget: TokenBudget | None = None,
-         span_name: str = "llm_call", max_tokens: int = 1600) -> Any:
+         span_name: str = "llm_call", max_tokens: int = 2600) -> Any:
     """One LLM call: traced, budgeted, and cost-recorded. Every call goes
     through here so no call can escape the token budget."""
     model = model or config.SYNTH_MODEL
@@ -179,7 +179,7 @@ def extract_confidence(text: str) -> str:
 def _medoid(texts: list[str]) -> tuple[int, float]:
     """Majority vote over free text: embed each candidate conclusion and pick the
     one closest to all the others (the medoid). A wrong answer only wins if the
-    same bias appears in a majority of independent paths — idiosyncratic errors
+    same bias appears in a majority of independent paths â€” idiosyncratic errors
     do not survive. Returns (winning_index, mean_pairwise_agreement)."""
     try:
         from .ingest import get_embedder
@@ -197,7 +197,7 @@ def self_consistency_synthesis(question: str, context: str, budget: TokenBudget,
                                k: int | None = None) -> dict:
     """Generate k independent reasoning paths at high temperature, then take the
     majority answer. Cost is k x tokens, so this runs ONLY on the final synthesis
-    step — never inside the tool loop."""
+    step â€” never inside the tool loop."""
     k = k or config.SELF_CONSISTENCY_K
     messages = build_synthesis_messages(question, context)
     paths: list[str] = []
