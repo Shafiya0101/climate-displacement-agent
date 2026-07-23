@@ -145,5 +145,12 @@
    "faithfulness": 10,
    "answer_relevancy": 10
   }
+ },
+ "scores_ragas_reference": {
+  "engine": "ragas:openai/gpt-oss-safeguard-20b",
+  "context_recall": 0.967,
+  "context_recall_n": 10,
+  "context_precision": 0.942,
+  "context_precision_n": 10
  }
 }

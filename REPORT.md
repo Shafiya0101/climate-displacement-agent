@@ -137,50 +137,101 @@ floor: any delta below it is not distinguishable from harness noise.**
 
 #### Results
 
-Judge: `openai/gpt-oss-20b`, temperature 0, one call per question.
+We report two independent scorings of the same saved rows.
 
-| Metric | Baseline | Final | Delta | Reading |
-|---|---|---|---|---|
-| context_recall | 0.967 | 1.000 | +0.033 | **below the 0.04 noise floor — not a measurable improvement** |
-| context_precision | 0.340 | 0.220 | **-0.120** | real, 3x the noise floor — the parent-chunk trade-off |
-| faithfulness | 1.000 | 1.000 | 0.000 | saturated at baseline — no headroom |
-| answer_relevancy | 1.000 | 1.000 | 0.000 | saturated at baseline — no headroom |
+**A. `ragas` package** (`eval/ragas_complete.py`, judge
+`openai/gpt-oss-safeguard-20b`, sequential execution, 10/10 questions scored on
+every metric):
 
-Corroborating figures from the `ragas` package itself, obtained before its
-reference-based metrics were blocked by provider rate limits:
+| Metric | Baseline | Final | Delta |
+|---|---|---|---|
+| context_recall | 0.967 | **1.000** | +0.033 |
+| context_precision | 0.942 | **0.992** | +0.050 |
+| answer_relevancy | 0.829 | **0.901** | +0.072 |
+| faithfulness | 0.917 | not obtained | — |
 
-| Metric | Baseline | Final | Delta | Engine |
-|---|---|---|---|---|
-| answer_relevancy | 0.829 | **0.901** | **+0.072** | ragas |
-| faithfulness | 0.917 | not obtained | — | ragas |
+(`answer_relevancy` and `faithfulness` come from an earlier ragas pass on a
+different judge model; see the note on instrument heterogeneity below.)
 
-#### What the numbers say
+**B. Independent LLM judge** (`eval/rescore.py`, judge `openai/gpt-oss-20b`, one
+call per question, stability-validated above):
 
-**`context_precision` fell 0.34 -> 0.22, and this is the designed behaviour.**
-The final configuration returns 800-word parent passages; the matched 200-word
-child is one quarter of what gets sent, and the surrounding three quarters are
-scored by the metric as non-useful context. Parent-child chunking therefore
-*must* depress a precision metric that counts passage-level usefulness. We accept
-the trade because the same change is what supplies the model with complete
-sentences rather than facts cut at a chunk boundary. This is the clearest signal
-in our evaluation precisely because it is the only metric with headroom to move.
+| Metric | Baseline | Final | Delta |
+|---|---|---|---|
+| context_recall | 0.967 | 1.000 | +0.033 |
+| context_precision | 0.340 | 0.220 | -0.120 |
+| faithfulness | 1.000 | 1.000 | 0.000 |
+| answer_relevancy | 1.000 | 1.000 | 0.000 |
 
-**`answer_relevancy` improved by 0.072 on the ragas scale but is unmeasurable on
-ours.** Our judge scored it 1.0 for every question in both configurations. The
-ragas result is the more informative one here, and it attributes the gain to the
-Block 3 reasoning layer: the baseline answers directly, while the final
-configuration is constrained to the EVIDENCE / ANALYSIS / CONCLUSION / CONFIDENCE
-format, which forces the model to address every part of the question — including
-the parts it cannot answer — instead of only the part it retrieved best.
+#### Where the two instruments agree, and where they do not
 
-**Three of four metrics are saturated, and that is a finding about the corpus,
-not the pipeline.** Our corpus is **8 documents -> 8 parent chunks -> 16 child
-chunks**. Top-5 retrieval over 8 parents returns most of the corpus regardless of
-ranking quality, so `context_recall` is near-perfect for both configurations and
-hybrid search has nothing left to recover. A metric at its ceiling cannot
-demonstrate an improvement. The retrieval techniques are implemented and
-independently inspectable via `python src/retrieval.py "sea level rise atolls"`;
-the corpus is too small to measure them. See Limitation 1.
+**`context_recall` agrees exactly: 0.967 -> 1.000 on both.** Two different
+harnesses, different prompts, different judge models, identical figures to three
+decimal places. We treat this as convergent validity: recall genuinely improved,
+and the improvement is small because the baseline was already near ceiling.
+
+**`context_precision` disagrees in direction, not just magnitude.** Ragas reports
+0.942 -> 0.992 (improving); our judge reports 0.340 -> 0.220 (declining). Same
+rows, same passages, opposite conclusions.
+
+This is not an error in either instrument — they are answering different
+questions under the same metric name. Ragas's
+`LLMContextPrecisionWithReference` asks whether each retrieved passage is
+*useful for answering*, given the reference answer. An 800-word parent chunk that
+contains the needed fact plus surrounding context passes that test, and passes it
+more reliably than a 200-word child that contains only half the fact — hence the
+improvement. Our judge's prompt asks what *fraction* of the retrieved context is
+relevant. The same parent chunk fails that test, because roughly three quarters
+of it is material beyond the matched child — hence the decline.
+
+Both definitions are defensible. The metric name conceals the difference, and a
+report quoting one number without the other would misrepresent what was measured.
+**The practical consequence for our design:** parent-child chunking improves
+passage-level usefulness and degrades token-level density, simultaneously. That
+is precisely the trade the technique is supposed to make, and we could only see it
+because we ran two instruments.
+
+#### What caused each improvement
+
+**`context_recall` (+0.033, both instruments).** Block 1 retrieval: BM25 + dense
++ RRF, plus parent-child chunking. The gain is small because the baseline was
+already at 0.967 — on an 8-parent corpus, top-k retrieval returns most of the
+corpus regardless of ranking quality, leaving almost nothing for hybrid search to
+recover. The technique is implemented and inspectable
+(`python src/retrieval.py "sea level rise atolls"`); the corpus is too small to
+demonstrate it. See Limitation 1.
+
+**`context_precision` (+0.050 on ragas).** Cross-encoder reranking plus
+parent-chunk return. Under ragas's passage-usefulness definition, returning the
+parent raises the proportion of retrieved passages that can actually support the
+answer.
+
+**`answer_relevancy` (+0.072).** Block 3 reasoning, not retrieval. The baseline
+answers directly; the final configuration is constrained to the
+EVIDENCE / ANALYSIS / CONCLUSION / CONFIDENCE format, which forces the model to
+address every part of the question — including the parts it cannot answer —
+instead of only the part it retrieved best.
+
+**`faithfulness` — no measurable change.** Our judge scored it 1.000 for both
+configurations, so Self-Consistency k=3 cannot be shown to have moved it. The
+ragas baseline figure of 0.917 has no final-configuration counterpart. We are
+therefore unable to demonstrate the effect of the vote on faithfulness, and say so
+rather than attributing an unmeasured gain to it. The controlled k=1 vs k=3
+ablation that would settle it is Limitation 3.
+
+#### A note on instrument heterogeneity
+
+The four ragas figures do not come from a single judge model. `context_recall`
+and `context_precision` were produced by `openai/gpt-oss-safeguard-20b` running
+sequentially; `answer_relevancy` and `faithfulness` come from an earlier pass on
+a different model, before the reference-based metrics were lost to concurrent
+rate limiting. The first pass failed because ragas dispatches every
+(question x metric) job in parallel, and under a free-tier limiter the queued jobs
+exceeded their timeout and returned NaN. Setting `max_workers=1` with a 600 s
+timeout recovered 10/10 on both metrics — the failure was concurrency against the
+provider, not the package. A single-judge rerun of all four metrics would be
+cleaner and is a straightforward next step; we report the mixed provenance rather
+than presenting the four numbers as one instrument.
 
 #### A judge we rejected
 
