@@ -134,11 +134,11 @@
   }
  ],
  "scores_judge": {
-  "engine": "llm_judge:llama-3.1-8b-instant",
-  "context_recall": 0.4,
-  "context_precision": 0.42,
-  "faithfulness": 0.41,
-  "answer_relevancy": 0.41,
+  "engine": "llm_judge:openai/gpt-oss-20b",
+  "context_recall": 1.0,
+  "context_precision": 0.22,
+  "faithfulness": 1.0,
+  "answer_relevancy": 1.0,
   "scored_n": {
    "context_recall": 10,
    "context_precision": 10,

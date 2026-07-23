@@ -105,74 +105,96 @@ exists to remove.
 
 ### 3.1 RAGAS: baseline vs final
 
-Both configurations are produced by `eval/run\\\_ragas.py`, which drives the *same*
-`hybrid\\\_retrieve` function with three flags flipped, so nothing but the technique
+Both configurations are produced by `eval/run_ragas.py`, which drives the *same*
+`hybrid_retrieve` function with three flags flipped, so nothing but the technique
 under test differs between them.
 
-* **Baseline** = `use\\\_hybrid=False, use\\\_rerank=False, use\\\_parents=False` → plain
-top-k cosine over 200-word child chunks, direct prompting, no CoT, no vote.
-* **Final** = `use\\\_hybrid=True, use\\\_rerank=True, use\\\_parents=True` → BM25 + dense
+- **Baseline** = `use_hybrid=False, use_rerank=False, use_parents=False` -> plain
+  top-k cosine over 200-word child chunks, direct prompting, no CoT, no vote.
+- **Final** = `use_hybrid=True, use_rerank=True, use_parents=True` -> BM25 + dense
+  + RRF -> cross-encoder -> 800-word parent passages, few-shot CoT,
+  Self-Consistency k=3.
 
-  * RRF → cross-encoder → 800-word parent passages, few-shot CoT,
-Self-Consistency k=3.
+**Questions evaluated: 10** (`eval/questions.json`). Raw rows committed at
+`eval/results_baseline.json` and `eval/results_final.json`.
 
-**Questions evaluated: 10** (`eval/questions.json`). Both configurations were
-generated in full and the raw rows are committed at `eval/results\\\_baseline.json`
-and `eval/results\\\_final.json`.
+#### Instrument validation
 
-|Metric|Baseline|Final|Delta|Engine|
-|-|-|-|-|-|
-|answer\_relevancy|0.829|**0.901**|**+0.072**|ragas|
-|faithfulness|0.917|not obtained|—|ragas|
-|context\_recall|not obtained|not obtained|—|—|
-|context\_precision|not obtained|not obtained|—|—|
+We validated the judge before reporting any number from it, by scoring the
+identical saved rows twice and measuring drift:
 
-**The metric that improved, and why.** `answer\\\_relevancy` rose 0.829 → 0.901
-(+0.072). The technique responsible is the Block 3 reasoning layer, not
-retrieval. The baseline answers directly from context; the final configuration is
-constrained to the EVIDENCE / ANALYSIS / CONCLUSION / CONFIDENCE format, which
-forces the model to address each part of the question explicitly — including the
-parts it cannot answer — rather than replying only to the part it retrieved best.
-`answer\\\_relevancy` measures whether the response addresses the question asked, so
-a format that mandates completeness moves it directly.
+| Config | Run 1 | Run 2 | Max drift |
+|---|---|---|---|
+| baseline | 1.000 / 0.300 / 1.000 / 1.000 | 0.967 / 0.340 / 1.000 / 1.000 | 0.040 |
+| final | 1.000 / 0.220 / 1.000 / 1.000 | 1.000 / 0.220 / 1.000 / 1.000 | 0.000 |
 
-**Why the other three metrics are absent — and what we tried.** The `ragas`
-package returned `NaN` for the reference-based metrics. Those issue longer
-structured-output calls, and under the provider's free-tier rate limiter several
-timed out (`Exception raised in Job\\\[n]: TimeoutError`) while the remainder failed
-to parse. Over the course of evaluation we exhausted the daily token quota on
-three separate models: `llama-3.3-70b-versatile` (100,000 TPD),
-`openai/gpt-oss-120b` (200,000 TPD), and partially `llama-3.1-8b-instant`.
+(order: context_recall / context_precision / faithfulness / answer_relevancy)
 
-We then implemented a fallback LLM judge (`eval/rescore.py`) applying the same
-four metric definitions in a single call per question. **We are not reporting its
-output, because we established that it was not a valid instrument.** Scoring the
-identical saved rows twice, changing only how much passage text the judge was
-shown, moved the baseline from 0.84 to 0.96 while moving the final configuration
-from 0.63 to 0.40 — a swing of over 0.2 in opposite directions with no change
-whatsoever to the data being measured. Within each run the four metrics returned
-near-identical values (0.96 / 0.96 / 0.97 / 0.97, then 0.40 / 0.42 / 0.41 / 0.41),
-indicating the 8B judge was emitting one overall impression four times rather
-than discriminating between four metric definitions. A measurement that varies
-more with the harness than with the system under test cannot support a claim
-about the system, so we excluded it.
+Drift is at or below 0.04, and `context_precision` separates clearly from the
+other three, showing the judge discriminates between metric definitions rather
+than emitting one impression four times. **0.04 is therefore our resolution
+floor: any delta below it is not distinguishable from harness noise.**
 
-The truncation asymmetry that produced the swing is itself informative: the
-baseline returns 200-word children (\~1,200 characters, mostly surviving a
-1,000-character truncation) while the final configuration returns 800-word
-parents (\~4,800 characters, of which 20% survived). The judge was shown all of
-the baseline's evidence and a fifth of the final configuration's, then asked
-which retrieved better.
+#### Results
 
-**The underlying constraint.** Even with a working judge, our corpus is
-**8 documents → 8 parent chunks → 16 child chunks**. Top-5 retrieval over 8
-parents returns most of the corpus regardless of ranking quality, so there is
-almost no headroom for hybrid search and reranking to demonstrate an effect on
-`context\\\_recall`. The retrieval techniques are implemented and independently
-verifiable in `src/retrieval.py` (`bm25\\\_search`, `dense\\\_search`, `rrf\\\_fuse`,
-`get\\\_reranker`) and can be inspected directly with
-`python src/retrieval.py "sea level rise atolls"`; the corpus is simply too small
-to measure them. See Limitation 1.
+Judge: `openai/gpt-oss-20b`, temperature 0, one call per question.
+
+| Metric | Baseline | Final | Delta | Reading |
+|---|---|---|---|---|
+| context_recall | 0.967 | 1.000 | +0.033 | **below the 0.04 noise floor — not a measurable improvement** |
+| context_precision | 0.340 | 0.220 | **-0.120** | real, 3x the noise floor — the parent-chunk trade-off |
+| faithfulness | 1.000 | 1.000 | 0.000 | saturated at baseline — no headroom |
+| answer_relevancy | 1.000 | 1.000 | 0.000 | saturated at baseline — no headroom |
+
+Corroborating figures from the `ragas` package itself, obtained before its
+reference-based metrics were blocked by provider rate limits:
+
+| Metric | Baseline | Final | Delta | Engine |
+|---|---|---|---|---|
+| answer_relevancy | 0.829 | **0.901** | **+0.072** | ragas |
+| faithfulness | 0.917 | not obtained | — | ragas |
+
+#### What the numbers say
+
+**`context_precision` fell 0.34 -> 0.22, and this is the designed behaviour.**
+The final configuration returns 800-word parent passages; the matched 200-word
+child is one quarter of what gets sent, and the surrounding three quarters are
+scored by the metric as non-useful context. Parent-child chunking therefore
+*must* depress a precision metric that counts passage-level usefulness. We accept
+the trade because the same change is what supplies the model with complete
+sentences rather than facts cut at a chunk boundary. This is the clearest signal
+in our evaluation precisely because it is the only metric with headroom to move.
+
+**`answer_relevancy` improved by 0.072 on the ragas scale but is unmeasurable on
+ours.** Our judge scored it 1.0 for every question in both configurations. The
+ragas result is the more informative one here, and it attributes the gain to the
+Block 3 reasoning layer: the baseline answers directly, while the final
+configuration is constrained to the EVIDENCE / ANALYSIS / CONCLUSION / CONFIDENCE
+format, which forces the model to address every part of the question — including
+the parts it cannot answer — instead of only the part it retrieved best.
+
+**Three of four metrics are saturated, and that is a finding about the corpus,
+not the pipeline.** Our corpus is **8 documents -> 8 parent chunks -> 16 child
+chunks**. Top-5 retrieval over 8 parents returns most of the corpus regardless of
+ranking quality, so `context_recall` is near-perfect for both configurations and
+hybrid search has nothing left to recover. A metric at its ceiling cannot
+demonstrate an improvement. The retrieval techniques are implemented and
+independently inspectable via `python src/retrieval.py "sea level rise atolls"`;
+the corpus is too small to measure them. See Limitation 1.
+
+#### A judge we rejected
+
+Our first fallback judge was `llama-3.1-8b-instant`. It failed the same
+validation: scoring the identical rows while changing only how much passage text
+it was shown moved the baseline 0.84 -> 0.96 while moving the final configuration
+0.63 -> 0.40, a swing of over 0.2 in opposite directions with no change to the
+underlying data. Within each run all four metrics returned near-identical values
+(0.96 / 0.96 / 0.97 / 0.97), indicating one overall impression repeated rather
+than four measurements. We discarded its output entirely and re-ran with a larger
+judge. The truncation asymmetry that produced the swing is itself informative: at
+a 1,000-character limit the baseline's 200-word children mostly survived while
+the final configuration's 800-word parents lost 80% of their text, so the judge
+was shown all of one config's evidence and a fifth of the other's.
 
 ### 3.2 Cost, latency and tool distribution
 
