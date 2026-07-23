@@ -299,6 +299,13 @@ def main() -> None:
     print("\n" + "-" * 78)
     print(r["answer"])
     print("-" * 78)
+    if r.get("status") == "blocked_by_L1":
+        # Refused before any LLM call, so there is no critic verdict, no tool
+        # use and no cost to report. Print the refusal record and stop.
+        print(f"refused by       : L1 — patterns {r.get('patterns')}")
+        print("cost             : $0.00000 (no LLM call was made)")
+        print(f"latency          : {r.get('latency_s')}s")
+        return
     print(render_verdict(r["critic"]) if isinstance(r["critic"].get("issues"), list) else r["critic"])
     print("-" * 78)
     sc = r["self_consistency"]
