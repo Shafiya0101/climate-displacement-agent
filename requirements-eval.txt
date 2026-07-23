@@ -1,0 +1,9 @@
+# RAGAS is kept OUT of requirements.txt on purpose: it pulls a large langchain
+# dependency tree that can break the clean-install gate. Install it separately
+# when you run eval/run_ragas.py.
+-r requirements.txt
+ragas==0.2.10
+langchain-groq==0.2.3
+langchain-huggingface==0.1.2
+datasets==3.2.0
+pandas==2.2.3

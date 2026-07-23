@@ -1,0 +1,13 @@
+# Core runtime — must install clean from scratch.
+# Regenerate with `pip freeze > requirements.txt` once everything works on your machine.
+python-dotenv==1.0.1
+groq==0.11.0
+numpy==1.26.4
+rank-bm25==0.2.2
+sentence-transformers==3.0.1
+mcp==1.1.2
+langfuse==2.53.9
+requests==2.32.3
+pypdf==5.0.1
+pytest==8.3.3
+httpx==0.27.2   # groq 0.11.0 passes proxies=, removed in httpx 0.28

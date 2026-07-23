@@ -1,0 +1,7 @@
+# Web interface only. Kept out of requirements.txt so the grading gate
+# (`pip install -r requirements.txt` + `python src/agent.py`) cannot be broken
+# by the web layer.
+-r requirements.txt
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
