@@ -195,11 +195,7 @@ because we ran two instruments.
 
 **`context_recall` (+0.033, both instruments).** Block 1 retrieval: BM25 + dense
 + RRF, plus parent-child chunking. The gain is small because the baseline was
-already at 0.967 — on an 8-parent corpus, top-k retrieval returns most of the
-corpus regardless of ranking quality, leaving almost nothing for hybrid search to
-recover. The technique is implemented and inspectable
-(`python src/retrieval.py "sea level rise atolls"`); the corpus is too small to
-demonstrate it. See Limitation 1.
+On the original 8-document corpus these gains were small and hard to attribute, because top-k retrieval over 8 parent chunks returned most of the corpus regardless of ranking quality. After expanding the corpus to 77 parents / 358 children (see Limitation 1), the baseline and final pipelines diverge on a real index: context_recall holds at 0.967, while context_precision moves from 0.434 (baseline) to 0.382 (final) under an openai/gpt-oss-20b judge. The full pipeline returns larger parent passages, which improves reasoning quality but lowers token-level precision as scored by this judge -- the parent-chunk trade-off discussed in Limitation 1.
 
 **`context_precision` (+0.050 on ragas).** Cross-encoder reranking plus
 parent-chunk return. Under ragas's passage-usefulness definition, returning the
@@ -482,15 +478,7 @@ retention policy as the local logs.
 
 ## 6\. Limitations and what's next
 
-**Limitation 1 — the corpus is the ceiling, and it is small.** The agent answers
-only from `data/corpus/`: **8 documents → 8 parent chunks → 16 child chunks**.
-Retrieval quality metrics are near-meaningless at this size, because top-5
-retrieval over 8 parents returns most of the corpus regardless of ranking quality,
-which flatters `context\\\_recall` and depresses `context\\\_precision`. The shipped
-corpus is also composed of summary notes citing the source reports rather than
-extracts from the source PDFs, as `data/README.md` states. **Manifests when:** a
-question falls outside the indexed documents — the agent then reports "not covered
-by the retrieved context", which is correct behaviour and useless to the officer.
+**Limitation 1 - corpus size and composition.** The original submission indexed 8 short summary notes (8 parent chunks, 16 children), which saturated the retrieval metrics: top-k retrieval over 8 parents returned most of the corpus regardless of ranking quality. We subsequently expanded the corpus with the full IDMC Global Report on Internal Displacement 2024 (a 26 MB source PDF), taking the index to 77 parent chunks and 358 children. On this larger corpus the metrics are no longer saturated, and a genuine trade-off appears: our parent-chunk design returns 800-word passages for full context, which improves the agent's reasoning (it correctly distinguished the report's 9.7 M year-end disaster-displacement stock from a 7.6 M derived figure) but lowers token-level `context_precision` (0.434 -> 0.382 under an `openai/gpt-oss-20b` judge), because a larger passage contains more text surrounding the matched sentence. This reproduces, on a larger corpus, the judge-sensitivity effect noted in section 3.1: the same design change moves a precision metric up or down depending on the judge's definition of relevant context. A full benchmark corpus (e.g. BEIR-scale) remains future work.
 
 **Limitation 2 — `web\\\_search` is the unguarded edge.** Corpus documents are trusted
 by construction; web results are attacker-influenceable. They pass through
@@ -556,7 +544,7 @@ downgrade CONFIDENCE to LOW when revision is impossible.
 
 ### Next sprint, in priority order
 
-1. **Corpus expansion with provenance** — ingest the source PDFs listed in
+1. **Corpus expansion with provenance** - partially done: the corpus now includes the full IDMC GRID 2024 report (77 parents / 358 children). Next: add the remaining source PDFs, store per-chunk page numbers, and cite source and page rather than filename.
 `data/README.md`, store per-chunk page numbers, and cite `source · page` rather
 than filename. This unblocks Limitation 1, which currently caps what every
 other measurement can show.
