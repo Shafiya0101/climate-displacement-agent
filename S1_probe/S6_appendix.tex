@@ -1,0 +1,43 @@
+% ============================================================
+% S6 -- Appendix A: System Configuration
+% Paste this into the professor's paper, replacing the \ph{S6...} blocks
+% in Appendix A. All values are the ACTUAL run configuration (env overrides
+% applied), not the config.py defaults.
+% ============================================================
+
+\section{System Configuration}
+\label{app:system}
+
+\paragraph{Models.}
+All generation, tool-selection and critic roles used
+\texttt{openai/gpt-oss-20b} served via Groq (set through environment overrides
+of the \textsc{tool}, \textsc{synth} and \textsc{critic} model roles). The
+judge-side experiment (\S\ref{sec:results}) additionally used
+\texttt{llama-3.1-8b-instant}. Groq inference is not seed-deterministic at
+temperature $>0$; we therefore report over repeated runs rather than fixed
+seeds.
+
+\paragraph{Retrieval.}
+Dense embeddings use \texttt{sentence-transformers/all-MiniLM-L6-v2}
+(384-dimensional); reranking uses the cross-encoder
+\texttt{cross-encoder/ms-marco-MiniLM-L-6-v2}. The hybrid candidate pool is
+$K_{\text{cand}}=15$, fused by reciprocal-rank fusion with constant $k=60$
+(i.e.\ $1/(60+\mathrm{rank})$), then reranked and truncated to the top
+$\textsc{top-}k=3$ parent passages returned to the generator. Documents are
+chunked into parents of $\approx 800$ words and children of $\approx 200$ words
+with a 40-word child overlap; children are indexed and matched, parents are
+returned. The corpus is the IDMC Global Report on Internal Displacement 2024,
+yielding 77 parent and 357 child chunks.
+
+\paragraph{Reasoning.}
+Synthesis uses a few-shot chain-of-thought format with self-consistency at
+$k=3$ and temperature $0.8$; tool selection uses temperature $0.0$. The final
+answer is the medoid of the $k$ conclusions under embedding similarity. The
+agent loop is bounded at $\textsc{max-steps}=6$.
+
+\paragraph{Budget and cost.}
+A per-run token budget is enforced by a \texttt{TokenBudget} guard with a hard
+cap of \$2.00 and a warning threshold of \$0.50, priced at
+\$0.59/\$0.79 per million input/output tokens. Measured cost of the judge-side
+experiment (S2) was approximately \$0.12 for 539 judge scores. Total inference
+cost across all experiments: \ph{S6: sum once S3/S4 have run}.
