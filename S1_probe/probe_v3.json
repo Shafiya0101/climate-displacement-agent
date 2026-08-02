@@ -1,0 +1,2339 @@
+[
+ {
+  "id": "t03",
+  "question": "What is the reported figure for 'IDPs from disasters end 2023'?",
+  "gold": {
+   "value": "7.7 million",
+   "label": "IDPs from disasters end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.208
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 27.052
+  },
+  "answers": {
+   "correct_bare": "7.7 million people were living in displacement at the end of 2023.",
+   "correct_framed": "7.7 million people were living in displacement at the end of 2023.",
+   "near_bare": "6.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "6.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "IDPs from disasters end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t04",
+  "question": "What is the reported figure for 'conflict displacements 2023'?",
+  "gold": {
+   "value": "20.5 million",
+   "label": "conflict displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "15.3 million",
+   "label": "MENA IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.254
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 9.537
+  },
+  "answers": {
+   "correct_bare": "20.5 million new displacements were recorded during 2023.",
+   "correct_framed": "20.5 million new displacements were recorded during 2023.",
+   "near_bare": "15.3 million new displacements were recorded during 2023.",
+   "near_framed": "15.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "conflict displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t05",
+  "question": "What is the reported figure for 'disaster displacements 2023'?",
+  "gold": {
+   "value": "26.4 million",
+   "label": "disaster displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "34.8 million",
+   "label": "Sub-Saharan Africa IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.318
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 7.182
+  },
+  "answers": {
+   "correct_bare": "26.4 million new displacements were recorded during 2023.",
+   "correct_framed": "26.4 million new displacements were recorded during 2023.",
+   "near_bare": "34.8 million new displacements were recorded during 2023.",
+   "near_framed": "34.8 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "disaster displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t06",
+  "question": "What is the reported figure for 'non-international armed conflict displacements'?",
+  "gold": {
+   "value": "14.4 million",
+   "label": "non-international armed conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "15.3 million",
+   "label": "MENA IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.063
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 14.0
+  },
+  "answers": {
+   "correct_bare": "14.4 million new displacements were recorded during 2023.",
+   "correct_framed": "14.4 million new displacements were recorded during 2023.",
+   "near_bare": "15.3 million new displacements were recorded during 2023.",
+   "near_framed": "15.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "non-international armed conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t07",
+  "question": "What is the reported figure for 'international armed conflict displacements'?",
+  "gold": {
+   "value": "4.5 million",
+   "label": "international armed conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.2 million",
+   "label": "East Asia Pacific IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.067
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 47.0
+  },
+  "answers": {
+   "correct_bare": "4.5 million new displacements were recorded during 2023.",
+   "correct_framed": "4.5 million new displacements were recorded during 2023.",
+   "near_bare": "4.2 million new displacements were recorded during 2023.",
+   "near_framed": "4.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "international armed conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t08",
+  "question": "What is the reported figure for 'flood displacements globally'?",
+  "gold": {
+   "value": "9.8 million",
+   "label": "flood displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "9.1 million",
+   "label": "Sudan IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.071
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 21.041
+  },
+  "answers": {
+   "correct_bare": "9.8 million new displacements were recorded during 2023.",
+   "correct_framed": "9.8 million new displacements were recorded during 2023.",
+   "near_bare": "9.1 million new displacements were recorded during 2023.",
+   "near_framed": "9.1 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "flood displacements globally",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t09",
+  "question": "What is the reported figure for 'storm displacements globally'?",
+  "gold": {
+   "value": "9.5 million",
+   "label": "storm displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "9.1 million",
+   "label": "Sudan IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.042
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 21.737
+  },
+  "answers": {
+   "correct_bare": "9.5 million new displacements were recorded during 2023.",
+   "correct_framed": "9.5 million new displacements were recorded during 2023.",
+   "near_bare": "9.1 million new displacements were recorded during 2023.",
+   "near_framed": "9.1 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "storm displacements globally",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t10",
+  "question": "What is the reported figure for 'earthquake displacements globally'?",
+  "gold": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.3 million",
+   "label": "Americas IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.033
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 34.41
+  },
+  "answers": {
+   "correct_bare": "6.1 million new displacements were recorded during 2023.",
+   "correct_framed": "6.1 million new displacements were recorded during 2023.",
+   "near_bare": "6.3 million new displacements were recorded during 2023.",
+   "near_framed": "6.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "earthquake displacements globally",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t13",
+  "question": "What is the reported figure for 'Sub-Saharan Africa IDPs end 2023'?",
+  "gold": {
+   "value": "34.8 million",
+   "label": "Sub-Saharan Africa IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "26.4 million",
+   "label": "disaster displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.241
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 5.207
+  },
+  "answers": {
+   "correct_bare": "34.8 million people were living in displacement at the end of 2023.",
+   "correct_framed": "34.8 million people were living in displacement at the end of 2023.",
+   "near_bare": "26.4 million people were living in displacement at the end of 2023.",
+   "near_framed": "26.4 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sub-Saharan Africa IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t14",
+  "question": "What is the reported figure for 'Sub-Saharan Africa displacements 2023'?",
+  "gold": {
+   "value": "19.5 million",
+   "label": "Sub-Saharan Africa displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "15.3 million",
+   "label": "MENA IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.215
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 10.077
+  },
+  "answers": {
+   "correct_bare": "19.5 million new displacements were recorded during 2023.",
+   "correct_framed": "19.5 million new displacements were recorded during 2023.",
+   "near_bare": "15.3 million new displacements were recorded during 2023.",
+   "near_framed": "15.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sub-Saharan Africa displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t15",
+  "question": "What is the reported figure for 'Sub-Saharan Africa conflict displacements'?",
+  "gold": {
+   "value": "13.5 million",
+   "label": "Sub-Saharan Africa conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "15.3 million",
+   "label": "MENA IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.133
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 15.0
+  },
+  "answers": {
+   "correct_bare": "13.5 million new displacements were recorded during 2023.",
+   "correct_framed": "13.5 million new displacements were recorded during 2023.",
+   "near_bare": "15.3 million new displacements were recorded during 2023.",
+   "near_framed": "15.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sub-Saharan Africa conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t16",
+  "question": "What is the reported figure for 'Sub-Saharan Africa disaster displacements'?",
+  "gold": {
+   "value": "6 million",
+   "label": "Sub-Saharan Africa disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.3 million",
+   "label": "Americas IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.05
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 35.0
+  },
+  "answers": {
+   "correct_bare": "6 million new displacements were recorded during 2023.",
+   "correct_framed": "6 million new displacements were recorded during 2023.",
+   "near_bare": "6.3 million new displacements were recorded during 2023.",
+   "near_framed": "6.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sub-Saharan Africa disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t17",
+  "question": "What is the reported figure for 'Sudan conflict displacements'?",
+  "gold": {
+   "value": "6.039 million",
+   "label": "Sudan conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.3 million",
+   "label": "Americas IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.043
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 34.768
+  },
+  "answers": {
+   "correct_bare": "6.039 million new displacements were recorded during 2023.",
+   "correct_framed": "6.039 million new displacements were recorded during 2023.",
+   "near_bare": "6.3 million new displacements were recorded during 2023.",
+   "near_framed": "6.3 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sudan conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t18",
+  "question": "What is the reported figure for 'Sudan IDPs end 2023'?",
+  "gold": {
+   "value": "9.1 million",
+   "label": "Sudan IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "9.5 million",
+   "label": "storm displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.044
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 22.736
+  },
+  "answers": {
+   "correct_bare": "9.1 million people were living in displacement at the end of 2023.",
+   "correct_framed": "9.1 million people were living in displacement at the end of 2023.",
+   "near_bare": "9.5 million people were living in displacement at the end of 2023.",
+   "near_framed": "9.5 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Sudan IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t19",
+  "question": "What is the reported figure for 'DRC conflict displacements'?",
+  "gold": {
+   "value": "3.772 million",
+   "label": "DRC conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3.7 million",
+   "label": "Ukraine IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.019
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 56.264
+  },
+  "answers": {
+   "correct_bare": "3.772 million new displacements were recorded during 2023.",
+   "correct_framed": "3.772 million new displacements were recorded during 2023.",
+   "near_bare": "3.7 million new displacements were recorded during 2023.",
+   "near_framed": "3.7 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "DRC conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t20",
+  "question": "What is the reported figure for 'DRC conflict IDPs end 2023'?",
+  "gold": {
+   "value": "6.7 million",
+   "label": "DRC conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.09
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 31.239
+  },
+  "answers": {
+   "correct_bare": "6.7 million people were living in displacement at the end of 2023.",
+   "correct_framed": "6.7 million people were living in displacement at the end of 2023.",
+   "near_bare": "6.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "6.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "DRC conflict IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t21",
+  "question": "What is the reported figure for 'Ethiopia conflict displacements'?",
+  "gold": {
+   "value": "0.794 million",
+   "label": "Ethiopia conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.035
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 271.04
+  },
+  "answers": {
+   "correct_bare": "0.794 million new displacements were recorded during 2023.",
+   "correct_framed": "0.794 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Ethiopia conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t22",
+  "question": "What is the reported figure for 'Ethiopia conflict IDPs end 2023'?",
+  "gold": {
+   "value": "2.9 million",
+   "label": "Ethiopia conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.8 million",
+   "label": "Americas displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.034
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 73.483
+  },
+  "answers": {
+   "correct_bare": "2.9 million people were living in displacement at the end of 2023.",
+   "correct_framed": "2.9 million people were living in displacement at the end of 2023.",
+   "near_bare": "2.8 million people were living in displacement at the end of 2023.",
+   "near_framed": "2.8 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Ethiopia conflict IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t23",
+  "question": "What is the reported figure for 'Burkina Faso conflict displacements'?",
+  "gold": {
+   "value": "0.707 million",
+   "label": "Burkina Faso conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.163
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 304.516
+  },
+  "answers": {
+   "correct_bare": "0.707 million new displacements were recorded during 2023.",
+   "correct_framed": "0.707 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Burkina Faso conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t24",
+  "question": "What is the reported figure for 'Burkina Faso conflict IDPs March'?",
+  "gold": {
+   "value": "2.1 million",
+   "label": "Burkina Faso conflict IDPs March",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2 million",
+   "label": "Somalia drought and flood movements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.048
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 101.857
+  },
+  "answers": {
+   "correct_bare": "2.1 million people were living in displacement at the end of 2023.",
+   "correct_framed": "2.1 million people were living in displacement at the end of 2023.",
+   "near_bare": "2 million people were living in displacement at the end of 2023.",
+   "near_framed": "2 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Burkina Faso conflict IDPs March",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t25",
+  "question": "What is the reported figure for 'Somalia conflict displacements'?",
+  "gold": {
+   "value": "0.673 million",
+   "label": "Somalia conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.221
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 319.951
+  },
+  "answers": {
+   "correct_bare": "0.673 million new displacements were recorded during 2023.",
+   "correct_framed": "0.673 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Somalia conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t26",
+  "question": "What is the reported figure for 'Somalia drought and flood movements'?",
+  "gold": {
+   "value": "2 million",
+   "label": "Somalia drought and flood movements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.1 million",
+   "label": "Burkina Faso conflict IDPs March",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.05
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 107.0
+  },
+  "answers": {
+   "correct_bare": "2 million new displacements were recorded during 2023.",
+   "correct_framed": "2 million new displacements were recorded during 2023.",
+   "near_bare": "2.1 million new displacements were recorded during 2023.",
+   "near_framed": "2.1 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Somalia drought and flood movements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t27",
+  "question": "What is the reported figure for 'Kenya disaster displacements'?",
+  "gold": {
+   "value": "0.641 million",
+   "label": "Kenya disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.282
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 335.973
+  },
+  "answers": {
+   "correct_bare": "0.641 million new displacements were recorded during 2023.",
+   "correct_framed": "0.641 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Kenya disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t28",
+  "question": "What is the reported figure for 'Horn of Africa flood movements'?",
+  "gold": {
+   "value": "2.9 million",
+   "label": "Horn of Africa flood movements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.6 million",
+   "label": "Myanmar conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.103
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 73.483
+  },
+  "answers": {
+   "correct_bare": "2.9 million new displacements were recorded during 2023.",
+   "correct_framed": "2.9 million new displacements were recorded during 2023.",
+   "near_bare": "2.6 million new displacements were recorded during 2023.",
+   "near_framed": "2.6 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Horn of Africa flood movements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t29",
+  "question": "What is the reported figure for 'Malawi cyclone Freddy displacements'?",
+  "gold": {
+   "value": "0.659 million",
+   "label": "Malawi cyclone Freddy displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.247
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 326.769
+  },
+  "answers": {
+   "correct_bare": "0.659 million new displacements were recorded during 2023.",
+   "correct_framed": "0.659 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Malawi cyclone Freddy displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t30",
+  "question": "What is the reported figure for 'cyclone Freddy six countries'?",
+  "gold": {
+   "value": "1.4 million",
+   "label": "cyclone Freddy six countries",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1.2 million",
+   "label": "Pakistan IDPs from 2022 floods end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.143
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 153.286
+  },
+  "answers": {
+   "correct_bare": "1.4 million new displacements were recorded during 2023.",
+   "correct_framed": "1.4 million new displacements were recorded during 2023.",
+   "near_bare": "1.2 million new displacements were recorded during 2023.",
+   "near_framed": "1.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "cyclone Freddy six countries",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t31",
+  "question": "What is the reported figure for 'Mozambique disaster displacements'?",
+  "gold": {
+   "value": "0.655 million",
+   "label": "Mozambique disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.255
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 328.771
+  },
+  "answers": {
+   "correct_bare": "0.655 million new displacements were recorded during 2023.",
+   "correct_framed": "0.655 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Mozambique disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t33",
+  "question": "What is the reported figure for 'MENA IDPs end 2023'?",
+  "gold": {
+   "value": "15.3 million",
+   "label": "MENA IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "14.4 million",
+   "label": "non-international armed conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.059
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 13.118
+  },
+  "answers": {
+   "correct_bare": "15.3 million people were living in displacement at the end of 2023.",
+   "correct_framed": "15.3 million people were living in displacement at the end of 2023.",
+   "near_bare": "14.4 million people were living in displacement at the end of 2023.",
+   "near_framed": "14.4 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "MENA IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t34",
+  "question": "What is the reported figure for 'MENA displacements 2023'?",
+  "gold": {
+   "value": "5.4 million",
+   "label": "MENA displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "5.1 million",
+   "label": "Colombia conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.056
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 39.0
+  },
+  "answers": {
+   "correct_bare": "5.4 million new displacements were recorded during 2023.",
+   "correct_framed": "5.4 million new displacements were recorded during 2023.",
+   "near_bare": "5.1 million new displacements were recorded during 2023.",
+   "near_framed": "5.1 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "MENA displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t35",
+  "question": "What is the reported figure for 'MENA conflict displacements'?",
+  "gold": {
+   "value": "4.1 million",
+   "label": "MENA conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.2 million",
+   "label": "East Asia Pacific IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.024
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 51.683
+  },
+  "answers": {
+   "correct_bare": "4.1 million new displacements were recorded during 2023.",
+   "correct_framed": "4.1 million new displacements were recorded during 2023.",
+   "near_bare": "4.2 million new displacements were recorded during 2023.",
+   "near_framed": "4.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "MENA conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t36",
+  "question": "What is the reported figure for 'MENA disaster displacements'?",
+  "gold": {
+   "value": "1.3 million",
+   "label": "MENA disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1.2 million",
+   "label": "Pakistan IDPs from 2022 floods end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.077
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 165.154
+  },
+  "answers": {
+   "correct_bare": "1.3 million new displacements were recorded during 2023.",
+   "correct_framed": "1.3 million new displacements were recorded during 2023.",
+   "near_bare": "1.2 million new displacements were recorded during 2023.",
+   "near_framed": "1.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "MENA disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t37",
+  "question": "What is the reported figure for 'Palestine conflict displacements'?",
+  "gold": {
+   "value": "3.438 million",
+   "label": "Palestine conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3.7 million",
+   "label": "Ukraine IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.076
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 61.827
+  },
+  "answers": {
+   "correct_bare": "3.438 million new displacements were recorded during 2023.",
+   "correct_framed": "3.438 million new displacements were recorded during 2023.",
+   "near_bare": "3.7 million new displacements were recorded during 2023.",
+   "near_framed": "3.7 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Palestine conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t38",
+  "question": "What is the reported figure for 'Gaza Strip IDPs end 2023'?",
+  "gold": {
+   "value": "1.7 million",
+   "label": "Gaza Strip IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2 million",
+   "label": "Somalia drought and flood movements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.176
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 126.059
+  },
+  "answers": {
+   "correct_bare": "1.7 million people were living in displacement at the end of 2023.",
+   "correct_framed": "1.7 million people were living in displacement at the end of 2023.",
+   "near_bare": "2 million people were living in displacement at the end of 2023.",
+   "near_framed": "2 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Gaza Strip IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t40",
+  "question": "What is the reported figure for 'Syria IDPs end 2023'?",
+  "gold": {
+   "value": "7.2 million",
+   "label": "Syria IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.153
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 29.0
+  },
+  "answers": {
+   "correct_bare": "7.2 million people were living in displacement at the end of 2023.",
+   "correct_framed": "7.2 million people were living in displacement at the end of 2023.",
+   "near_bare": "6.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "6.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Syria IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t41",
+  "question": "What is the reported figure for 'Syria earthquake displacements'?",
+  "gold": {
+   "value": "0.678 million",
+   "label": "Syria earthquake displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.212
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 317.584
+  },
+  "answers": {
+   "correct_bare": "0.678 million new displacements were recorded during 2023.",
+   "correct_framed": "0.678 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Syria earthquake displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t44",
+  "question": "What is the reported figure for 'Yemen IDPs end 2023'?",
+  "gold": {
+   "value": "4.5 million",
+   "label": "Yemen IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.702 million",
+   "label": "China disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.045
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 47.0
+  },
+  "answers": {
+   "correct_bare": "4.5 million people were living in displacement at the end of 2023.",
+   "correct_framed": "4.5 million people were living in displacement at the end of 2023.",
+   "near_bare": "4.702 million people were living in displacement at the end of 2023.",
+   "near_framed": "4.702 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Yemen IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t45",
+  "question": "What is the reported figure for 'East Asia Pacific displacements 2023'?",
+  "gold": {
+   "value": "10.5 million",
+   "label": "East Asia Pacific displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "9.1 million",
+   "label": "Sudan IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.133
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 19.571
+  },
+  "answers": {
+   "correct_bare": "10.5 million new displacements were recorded during 2023.",
+   "correct_framed": "10.5 million new displacements were recorded during 2023.",
+   "near_bare": "9.1 million new displacements were recorded during 2023.",
+   "near_framed": "9.1 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "East Asia Pacific displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t46",
+  "question": "What is the reported figure for 'East Asia Pacific IDPs end 2023'?",
+  "gold": {
+   "value": "4.2 million",
+   "label": "East Asia Pacific IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.1 million",
+   "label": "MENA conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.024
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 50.429
+  },
+  "answers": {
+   "correct_bare": "4.2 million people were living in displacement at the end of 2023.",
+   "correct_framed": "4.2 million people were living in displacement at the end of 2023.",
+   "near_bare": "4.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "4.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "East Asia Pacific IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t47",
+  "question": "What is the reported figure for 'China disaster displacements'?",
+  "gold": {
+   "value": "4.702 million",
+   "label": "China disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.5 million",
+   "label": "Yemen IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.043
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 44.938
+  },
+  "answers": {
+   "correct_bare": "4.702 million new displacements were recorded during 2023.",
+   "correct_framed": "4.702 million new displacements were recorded during 2023.",
+   "near_bare": "4.5 million new displacements were recorded during 2023.",
+   "near_framed": "4.5 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "China disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t48",
+  "question": "What is the reported figure for 'Philippines disaster displacements'?",
+  "gold": {
+   "value": "2.594 million",
+   "label": "Philippines disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.6 million",
+   "label": "Myanmar conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.002
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 82.269
+  },
+  "answers": {
+   "correct_bare": "2.594 million new displacements were recorded during 2023.",
+   "correct_framed": "2.594 million new displacements were recorded during 2023.",
+   "near_bare": "2.6 million new displacements were recorded during 2023.",
+   "near_framed": "2.6 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Philippines disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t49",
+  "question": "What is the reported figure for 'Myanmar conflict displacements'?",
+  "gold": {
+   "value": "1.298 million",
+   "label": "Myanmar conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1.2 million",
+   "label": "Pakistan IDPs from 2022 floods end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.076
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 165.41
+  },
+  "answers": {
+   "correct_bare": "1.298 million new displacements were recorded during 2023.",
+   "correct_framed": "1.298 million new displacements were recorded during 2023.",
+   "near_bare": "1.2 million new displacements were recorded during 2023.",
+   "near_framed": "1.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Myanmar conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t50",
+  "question": "What is the reported figure for 'cyclone Mocha Myanmar displacements'?",
+  "gold": {
+   "value": "0.912 million",
+   "label": "cyclone Mocha Myanmar displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.099
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 235.842
+  },
+  "answers": {
+   "correct_bare": "0.912 million new displacements were recorded during 2023.",
+   "correct_framed": "0.912 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "cyclone Mocha Myanmar displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t51",
+  "question": "What is the reported figure for 'Myanmar conflict IDPs end 2023'?",
+  "gold": {
+   "value": "2.6 million",
+   "label": "Myanmar conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.594 million",
+   "label": "Philippines disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.002
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 82.077
+  },
+  "answers": {
+   "correct_bare": "2.6 million people were living in displacement at the end of 2023.",
+   "correct_framed": "2.6 million people were living in displacement at the end of 2023.",
+   "near_bare": "2.594 million people were living in displacement at the end of 2023.",
+   "near_framed": "2.594 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Myanmar conflict IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t53",
+  "question": "What is the reported figure for 'South Asia displacements 2023'?",
+  "gold": {
+   "value": "3.7 million",
+   "label": "South Asia displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.2 million",
+   "label": "East Asia Pacific IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.135
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 57.378
+  },
+  "answers": {
+   "correct_bare": "3.7 million new displacements were recorded during 2023.",
+   "correct_framed": "3.7 million new displacements were recorded during 2023.",
+   "near_bare": "4.2 million new displacements were recorded during 2023.",
+   "near_framed": "4.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "South Asia displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t54",
+  "question": "What is the reported figure for 'South Asia IDPs end 2023'?",
+  "gold": {
+   "value": "8.2 million",
+   "label": "South Asia IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "9.5 million",
+   "label": "storm displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.159
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 25.341
+  },
+  "answers": {
+   "correct_bare": "8.2 million people were living in displacement at the end of 2023.",
+   "correct_framed": "8.2 million people were living in displacement at the end of 2023.",
+   "near_bare": "9.5 million people were living in displacement at the end of 2023.",
+   "near_framed": "9.5 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "South Asia IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t55",
+  "question": "What is the reported figure for 'cyclone Mocha Bangladesh displacements'?",
+  "gold": {
+   "value": "1.3 million",
+   "label": "cyclone Mocha Bangladesh displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1.2 million",
+   "label": "Pakistan IDPs from 2022 floods end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.077
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 165.154
+  },
+  "answers": {
+   "correct_bare": "1.3 million new displacements were recorded during 2023.",
+   "correct_framed": "1.3 million new displacements were recorded during 2023.",
+   "near_bare": "1.2 million new displacements were recorded during 2023.",
+   "near_framed": "1.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "cyclone Mocha Bangladesh displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t59",
+  "question": "What is the reported figure for 'Pakistan IDPs from 2022 floods end 2023'?",
+  "gold": {
+   "value": "1.2 million",
+   "label": "Pakistan IDPs from 2022 floods end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1.298 million",
+   "label": "Myanmar conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.082
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 179.0
+  },
+  "answers": {
+   "correct_bare": "1.2 million people were living in displacement at the end of 2023.",
+   "correct_framed": "1.2 million people were living in displacement at the end of 2023.",
+   "near_bare": "1.298 million people were living in displacement at the end of 2023.",
+   "near_framed": "1.298 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Pakistan IDPs from 2022 floods end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t60",
+  "question": "What is the reported figure for 'Americas displacements 2023'?",
+  "gold": {
+   "value": "2.8 million",
+   "label": "Americas displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2.9 million",
+   "label": "Ethiopia conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.036
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 76.143
+  },
+  "answers": {
+   "correct_bare": "2.8 million new displacements were recorded during 2023.",
+   "correct_framed": "2.8 million new displacements were recorded during 2023.",
+   "near_bare": "2.9 million new displacements were recorded during 2023.",
+   "near_framed": "2.9 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Americas displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t61",
+  "question": "What is the reported figure for 'Americas IDPs end 2023'?",
+  "gold": {
+   "value": "6.3 million",
+   "label": "Americas IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.032
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 33.286
+  },
+  "answers": {
+   "correct_bare": "6.3 million people were living in displacement at the end of 2023.",
+   "correct_framed": "6.3 million people were living in displacement at the end of 2023.",
+   "near_bare": "6.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "6.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Americas IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t62",
+  "question": "What is the reported figure for 'Brazil disaster displacements'?",
+  "gold": {
+   "value": "0.745 million",
+   "label": "Brazil disaster displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.103
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 288.933
+  },
+  "answers": {
+   "correct_bare": "0.745 million new displacements were recorded during 2023.",
+   "correct_framed": "0.745 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Brazil disaster displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t66",
+  "question": "What is the reported figure for 'Colombia conflict IDPs end 2023'?",
+  "gold": {
+   "value": "5.1 million",
+   "label": "Colombia conflict IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "5.4 million",
+   "label": "MENA displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.059
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 41.353
+  },
+  "answers": {
+   "correct_bare": "5.1 million people were living in displacement at the end of 2023.",
+   "correct_framed": "5.1 million people were living in displacement at the end of 2023.",
+   "near_bare": "5.4 million people were living in displacement at the end of 2023.",
+   "near_framed": "5.4 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Colombia conflict IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t68",
+  "question": "What is the reported figure for 'Europe Central Asia displacements 2023'?",
+  "gold": {
+   "value": "5.1 million",
+   "label": "Europe Central Asia displacements 2023",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.5 million",
+   "label": "Yemen IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.118
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 41.353
+  },
+  "answers": {
+   "correct_bare": "5.1 million new displacements were recorded during 2023.",
+   "correct_framed": "5.1 million new displacements were recorded during 2023.",
+   "near_bare": "4.5 million new displacements were recorded during 2023.",
+   "near_framed": "4.5 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Europe Central Asia displacements 2023",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t69",
+  "question": "What is the reported figure for 'Europe Central Asia IDPs end 2023'?",
+  "gold": {
+   "value": "7.2 million",
+   "label": "Europe Central Asia IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6.1 million",
+   "label": "earthquake displacements globally",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.153
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 29.0
+  },
+  "answers": {
+   "correct_bare": "7.2 million people were living in displacement at the end of 2023.",
+   "correct_framed": "7.2 million people were living in displacement at the end of 2023.",
+   "near_bare": "6.1 million people were living in displacement at the end of 2023.",
+   "near_framed": "6.1 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Europe Central Asia IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t70",
+  "question": "What is the reported figure for 'Turkiye earthquake displacements'?",
+  "gold": {
+   "value": "4 million",
+   "label": "Turkiye earthquake displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4.2 million",
+   "label": "East Asia Pacific IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.05
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 53.0
+  },
+  "answers": {
+   "correct_bare": "4 million new displacements were recorded during 2023.",
+   "correct_framed": "4 million new displacements were recorded during 2023.",
+   "near_bare": "4.2 million new displacements were recorded during 2023.",
+   "near_framed": "4.2 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Turkiye earthquake displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t71",
+  "question": "What is the reported figure for 'Turkiye earthquake IDPs end 2023'?",
+  "gold": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.794 million",
+   "label": "Ethiopia conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.034
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 261.774
+  },
+  "answers": {
+   "correct_bare": "0.822 million people were living in displacement at the end of 2023.",
+   "correct_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "near_bare": "0.794 million people were living in displacement at the end of 2023.",
+   "near_framed": "0.794 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Turkiye earthquake IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t72",
+  "question": "What is the reported figure for 'Ukraine conflict displacements'?",
+  "gold": {
+   "value": "0.714 million",
+   "label": "Ukraine conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "0.822 million",
+   "label": "Turkiye earthquake IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.151
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 301.521
+  },
+  "answers": {
+   "correct_bare": "0.714 million new displacements were recorded during 2023.",
+   "correct_framed": "0.714 million new displacements were recorded during 2023.",
+   "near_bare": "0.822 million new displacements were recorded during 2023.",
+   "near_framed": "0.822 million people were living in displacement at the end of 2023.",
+   "far_bare": "216 million new displacements were recorded during 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Ukraine conflict displacements",
+  "tau_q": "FLOW",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ },
+ {
+  "id": "t73",
+  "question": "What is the reported figure for 'Ukraine IDPs end 2023'?",
+  "gold": {
+   "value": "3.7 million",
+   "label": "Ukraine IDPs end 2023",
+   "entity": "people",
+   "temporal": "STOCK",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3.772 million",
+   "label": "DRC conflict displacements",
+   "entity": "events",
+   "temporal": "FLOW",
+   "delta": 0.019
+  },
+  "far_miss": {
+   "value": "216 million",
+   "label": "World Bank Groundswell projection 2050",
+   "entity": "people",
+   "temporal": "PROJ",
+   "delta": 57.378
+  },
+  "answers": {
+   "correct_bare": "3.7 million people were living in displacement at the end of 2023.",
+   "correct_framed": "3.7 million people were living in displacement at the end of 2023.",
+   "near_bare": "3.772 million people were living in displacement at the end of 2023.",
+   "near_framed": "3.772 million new displacements were recorded during 2023.",
+   "far_bare": "216 million people were living in displacement at the end of 2023.",
+   "far_framed": "216 million people are projected to be displaced by 2050."
+  },
+  "gold_evidence": "Ukraine IDPs end 2023",
+  "tau_q": "STOCK",
+  "error_classes": {
+   "near_bare": "attribution_error",
+   "near_framed": "substitution_error",
+   "far_bare": "attribution_error",
+   "far_framed": "substitution_error"
+  }
+ }
+]
