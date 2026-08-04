@@ -1,0 +1,57 @@
+{"id": "t03", "tau_q": "STOCK", "class": "correct", "answer": "7.7 million people were living in displacement at the end of 2023."}
+{"id": "t04", "tau_q": "FLOW", "class": "other", "answer": "20.5 million people were displaced due to conflict in 2023."}
+{"id": "t05", "tau_q": "FLOW", "class": "other", "answer": "26.4 million people were displaced due to disasters in 2023."}
+{"id": "t06", "tau_q": "FLOW", "class": "other", "answer": "14.4 million people were displaced due to non-international armed conflict."}
+{"id": "t07", "tau_q": "FLOW", "class": "other", "answer": "4.5 million people were displaced due to international armed conflict."}
+{"id": "t08", "tau_q": "FLOW", "class": "other", "answer": "9.8 million people were displaced due to floods globally in 2023."}
+{"id": "t09", "tau_q": "FLOW", "class": "other", "answer": "9.5 million people were displaced due to storms globally in 2023."}
+{"id": "t10", "tau_q": "FLOW", "class": "other", "answer": "6.1 million people were displaced due to earthquakes globally in 2023."}
+{"id": "t13", "tau_q": "STOCK", "class": "correct", "answer": "34.8 million people were living in displacement at the end of 2023."}
+{"id": "t14", "tau_q": "FLOW", "class": "correct", "answer": "19.5 million new displacements were recorded during 2023."}
+{"id": "t15", "tau_q": "FLOW", "class": "correct", "answer": "13.5 million new displacements were recorded during 2023."}
+{"id": "t16", "tau_q": "FLOW", "class": "other", "answer": "6 million people were displaced in Sub-Saharan Africa due to disasters in 2023."}
+{"id": "t17", "tau_q": "FLOW", "class": "correct", "answer": "6.039 million new displacements were recorded during 2023."}
+{"id": "t18", "tau_q": "STOCK", "class": "correct", "answer": "9.1 million people were living in displacement at the end of 2023."}
+{"id": "t19", "tau_q": "FLOW", "class": "other", "answer": "3.772 million people were displaced due to the DRC conflict in 2023."}
+{"id": "t20", "tau_q": "STOCK", "class": "correct", "answer": "6.7 million people were living in displacement at the end of 2023."}
+{"id": "t21", "tau_q": "FLOW", "class": "correct", "answer": "0.794 million new displacements were recorded during 2023."}
+{"id": "t22", "tau_q": "STOCK", "class": "correct", "answer": "2.9 million people were living in displacement at the end of 2023."}
+{"id": "t23", "tau_q": "FLOW", "class": "correct", "answer": "0.707 million new displacements were recorded during 2023."}
+{"id": "t24", "tau_q": "STOCK", "class": "correct", "answer": "2.1 million people were living in displacement at the end of 2023 due to the Burkina Faso conflict."}
+{"id": "t25", "tau_q": "FLOW", "class": "correct", "answer": "0.673 million new displacements were recorded during 2023."}
+{"id": "t26", "tau_q": "FLOW", "class": "correct", "answer": "2 million people were displaced due to Somalia drought and flood movements."}
+{"id": "t27", "tau_q": "FLOW", "class": "correct", "answer": "0.641 million new displacements were recorded during 2023."}
+{"id": "t28", "tau_q": "FLOW", "class": "correct", "answer": "2.9 million new displacements were recorded during 2023 for the Horn of Africa flood movements."}
+{"id": "t29", "tau_q": "FLOW", "class": "correct", "answer": "0.659 million new displacements were recorded during 2023."}
+{"id": "t30", "tau_q": "FLOW", "class": "correct", "answer": "1.4 million new displacements were recorded during 2023 due to cyclone Freddy in six countries."}
+{"id": "t31", "tau_q": "FLOW", "class": "other", "answer": "0.655 million people were displaced due to the Mozambique disaster."}
+{"id": "t33", "tau_q": "STOCK", "class": "correct", "answer": "15.3 million people were living in displacement at the end of 2023."}
+{"id": "t34", "tau_q": "FLOW", "class": "other", "answer": "5.4 million people were displaced in the MENA region in 2023."}
+{"id": "t35", "tau_q": "FLOW", "class": "other", "answer": "4.1 million people were displaced due to the MENA conflict in 2023."}
+{"id": "t36", "tau_q": "FLOW", "class": "other", "answer": "1.3 million people were displaced due to MENA disasters in 2023."}
+{"id": "t37", "tau_q": "FLOW", "class": "correct", "answer": "3.438 million new displacements were recorded during 2023."}
+{"id": "t38", "tau_q": "STOCK", "class": "correct", "answer": "1.7 million people, living in displacement at the end of 2023."}
+{"id": "t40", "tau_q": "STOCK", "class": "correct", "answer": "7.2 million people were living in displacement at the end of 2023."}
+{"id": "t41", "tau_q": "FLOW", "class": "other", "answer": "0.678 million people were displaced due to the Syria earthquake."}
+{"id": "t44", "tau_q": "STOCK", "class": "correct", "answer": "4.5 million people were living in displacement at the end of 2023."}
+{"id": "t45", "tau_q": "FLOW", "class": "correct", "answer": "10.5 million new displacements were recorded during 2023."}
+{"id": "t46", "tau_q": "STOCK", "class": "correct", "answer": "4.2 million people were living in displacement at the end of 2023."}
+{"id": "t47", "tau_q": "FLOW", "class": "correct", "answer": "4.702 million new displacements were recorded during 2023 in China."}
+{"id": "t48", "tau_q": "FLOW", "class": "other", "answer": "2.594 million people were displaced due to Philippines disasters in 2023."}
+{"id": "t49", "tau_q": "FLOW", "class": "correct", "answer": "1.298 million new displacements were recorded during 2023."}
+{"id": "t50", "tau_q": "FLOW", "class": "other", "answer": "0.912 million people were displaced due to cyclone Mocha in Myanmar."}
+{"id": "t51", "tau_q": "STOCK", "class": "correct", "answer": "2.6 million people were living in displacement at the end of 2023."}
+{"id": "t53", "tau_q": "FLOW", "class": "other", "answer": "3.7 million people were displaced in South Asia in 2023."}
+{"id": "t54", "tau_q": "STOCK", "class": "correct", "answer": "8.2 million people were living in displacement at the end of 2023."}
+{"id": "t55", "tau_q": "FLOW", "class": "other", "answer": "1.3 million people were displaced due to cyclone Mocha in Bangladesh."}
+{"id": "t59", "tau_q": "STOCK", "class": "other", "answer": "1.2 million people."}
+{"id": "t60", "tau_q": "FLOW", "class": "other", "answer": "2.8 million people were displaced in the Americas in 2023."}
+{"id": "t61", "tau_q": "STOCK", "class": "correct", "answer": "6.3 million people were living in displacement at the end of 2023."}
+{"id": "t62", "tau_q": "FLOW", "class": "other", "answer": "0.745 million people were displaced due to Brazil disasters in 2023."}
+{"id": "t66", "tau_q": "STOCK", "class": "correct", "answer": "5.1 million people were living in displacement at the end of 2023."}
+{"id": "t68", "tau_q": "FLOW", "class": "correct", "answer": "5.1 million new displacements were recorded during 2023."}
+{"id": "t69", "tau_q": "STOCK", "class": "correct", "answer": "7.2 million people were living in displacement at the end of 2023."}
+{"id": "t70", "tau_q": "FLOW", "class": "other", "answer": "4 million people were displaced due to the Turkiye earthquake in 2023."}
+{"id": "t71", "tau_q": "STOCK", "class": "correct", "answer": "0.822 million people were living in displacement at the end of 2023."}
+{"id": "t72", "tau_q": "FLOW", "class": "correct", "answer": "0.714 million new displacements were recorded during 2023."}
+{"id": "t73", "tau_q": "STOCK", "class": "correct", "answer": "3.7 million people were living in displacement at the end of 2023."}
