@@ -1,0 +1,1370 @@
+[
+ {
+  "id": "tb01",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Philippines in 2007?",
+  "gold": {
+   "value": "159,638",
+   "label": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "85,720",
+   "label": "85,720 TB cases were notified to national authorities in Philippines during 2007.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.463
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 8.6
+  },
+  "evidence": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007. 85,720 TB cases were notified to national authorities in Philippines during 2007. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+   "ATT_near": "A national TB prevalence survey in Philippines estimated 85,720 prevalent cases of TB in 2007.",
+   "ATT_far": "A national TB prevalence survey in Philippines estimated 1,531,762 prevalent cases of TB in 2007.",
+   "SUB_near": "85,720 TB cases were notified to national authorities in Philippines during 2007.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb02",
+  "question": "How many TB cases were notified to national authorities in Philippines during 2007?",
+  "gold": {
+   "value": "85,720",
+   "label": "85,720 TB cases were notified to national authorities in Philippines during 2007.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "159,638",
+   "label": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.862
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 37.0
+  },
+  "evidence": "85,720 TB cases were notified to national authorities in Philippines during 2007. A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "85,720 TB cases were notified to national authorities in Philippines during 2007.",
+   "ATT_near": "159,638 TB cases were notified to national authorities in Philippines during 2007.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in Philippines during 2007.",
+   "SUB_near": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ },
+ {
+  "id": "tb03",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Viet Nam in 2007?",
+  "gold": {
+   "value": "125,649",
+   "label": "A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "54,353",
+   "label": "54,353 TB cases were notified to national authorities in Viet Nam during 2007.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.567
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 11.2
+  },
+  "evidence": "A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007. 54,353 TB cases were notified to national authorities in Viet Nam during 2007. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007.",
+   "ATT_near": "A national TB prevalence survey in Viet Nam estimated 54,353 prevalent cases of TB in 2007.",
+   "ATT_far": "A national TB prevalence survey in Viet Nam estimated 1,531,762 prevalent cases of TB in 2007.",
+   "SUB_near": "54,353 TB cases were notified to national authorities in Viet Nam during 2007.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb04",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Myanmar in 2009?",
+  "gold": {
+   "value": "86,989",
+   "label": "A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "41,109",
+   "label": "41,109 TB cases were notified to national authorities in Myanmar during 2009.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.527
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 16.6
+  },
+  "evidence": "A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009. 41,109 TB cases were notified to national authorities in Myanmar during 2009. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009.",
+   "ATT_near": "A national TB prevalence survey in Myanmar estimated 41,109 prevalent cases of TB in 2009.",
+   "ATT_far": "A national TB prevalence survey in Myanmar estimated 1,531,762 prevalent cases of TB in 2009.",
+   "SUB_near": "41,109 TB cases were notified to national authorities in Myanmar during 2009.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb05",
+  "question": "How many TB cases were notified to national authorities in China during 2010?",
+  "gold": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "730,911",
+   "label": "A national TB prevalence survey in China estimated 730,911 prevalent cases of TB in 2010.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.707
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 6.6
+  },
+  "evidence": "428,214 TB cases were notified to national authorities in China during 2010. A national TB prevalence survey in China estimated 730,911 prevalent cases of TB in 2010. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "ATT_near": "730,911 TB cases were notified to national authorities in China during 2010.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in China during 2010.",
+   "SUB_near": "A national TB prevalence survey in China estimated 730,911 prevalent cases of TB in 2010.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ },
+ {
+  "id": "tb06",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Cambodia in 2011?",
+  "gold": {
+   "value": "26,529",
+   "label": "A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "15,803",
+   "label": "15,803 TB cases were notified to national authorities in Cambodia during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.404
+  },
+  "far_miss": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 15.1
+  },
+  "evidence": "A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011. 15,803 TB cases were notified to national authorities in Cambodia during 2011. 428,214 TB cases were notified to national authorities in China during 2010.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011.",
+   "ATT_near": "A national TB prevalence survey in Cambodia estimated 15,803 prevalent cases of TB in 2011.",
+   "ATT_far": "A national TB prevalence survey in Cambodia estimated 428,214 prevalent cases of TB in 2011.",
+   "SUB_near": "15,803 TB cases were notified to national authorities in Cambodia during 2011.",
+   "SUB_far": "428,214 TB cases were notified to national authorities in China during 2010."
+  }
+ },
+ {
+  "id": "tb07",
+  "question": "How many TB cases were notified to national authorities in Cambodia during 2011?",
+  "gold": {
+   "value": "15,803",
+   "label": "15,803 TB cases were notified to national authorities in Cambodia during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "26,529",
+   "label": "A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.679
+  },
+  "far_miss": {
+   "value": "300,236",
+   "label": "A national TB prevalence survey in Pakistan estimated 300,236 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 18.0
+  },
+  "evidence": "15,803 TB cases were notified to national authorities in Cambodia during 2011. A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011. A national TB prevalence survey in Pakistan estimated 300,236 prevalent cases of TB in 2011.",
+  "answers": {
+   "correct": "15,803 TB cases were notified to national authorities in Cambodia during 2011.",
+   "ATT_near": "26,529 TB cases were notified to national authorities in Cambodia during 2011.",
+   "ATT_far": "300,236 TB cases were notified to national authorities in Cambodia during 2011.",
+   "SUB_near": "A national TB prevalence survey in Cambodia estimated 26,529 prevalent cases of TB in 2011.",
+   "SUB_far": "A national TB prevalence survey in Pakistan estimated 300,236 prevalent cases of TB in 2011."
+  }
+ },
+ {
+  "id": "tb08",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Ethiopia in 2011?",
+  "gold": {
+   "value": "54,453",
+   "label": "A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "45,864",
+   "label": "45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.158
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 27.1
+  },
+  "evidence": "A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011. 45,864 TB cases were notified to national authorities in Ethiopia during 2011. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011.",
+   "ATT_near": "A national TB prevalence survey in Ethiopia estimated 45,864 prevalent cases of TB in 2011.",
+   "ATT_far": "A national TB prevalence survey in Ethiopia estimated 1,531,762 prevalent cases of TB in 2011.",
+   "SUB_near": "45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb09",
+  "question": "How many TB cases were notified to national authorities in Ethiopia during 2011?",
+  "gold": {
+   "value": "45,864",
+   "label": "45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "54,453",
+   "label": "A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.187
+  },
+  "far_miss": {
+   "value": "349,207",
+   "label": "A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 6.6
+  },
+  "evidence": "45,864 TB cases were notified to national authorities in Ethiopia during 2011. A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011. A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018.",
+  "answers": {
+   "correct": "45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "ATT_near": "54,453 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "ATT_far": "349,207 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "SUB_near": "A national TB prevalence survey in Ethiopia estimated 54,453 prevalent cases of TB in 2011.",
+   "SUB_far": "A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018."
+  }
+ },
+ {
+  "id": "tb10",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Lao People's Democratic Republic in 2011?",
+  "gold": {
+   "value": "11,238",
+   "label": "A national TB prevalence survey in Lao People's Democratic Republic estimated 11,238 prevalent cases of TB in 2011.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3,249",
+   "label": "3,249 TB cases were notified to national authorities in Lao People's Democratic Republic during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.711
+  },
+  "far_miss": {
+   "value": "111,701",
+   "label": "111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 8.9
+  },
+  "evidence": "A national TB prevalence survey in Lao People's Democratic Republic estimated 11,238 prevalent cases of TB in 2011. 3,249 TB cases were notified to national authorities in Lao People's Democratic Republic during 2011. 111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Lao People's Democratic Republic estimated 11,238 prevalent cases of TB in 2011.",
+   "ATT_near": "A national TB prevalence survey in Lao People's Democratic Republic estimated 3,249 prevalent cases of TB in 2011.",
+   "ATT_far": "A national TB prevalence survey in Lao People's Democratic Republic estimated 111,701 prevalent cases of TB in 2011.",
+   "SUB_near": "3,249 TB cases were notified to national authorities in Lao People's Democratic Republic during 2011.",
+   "SUB_far": "111,701 TB cases were notified to national authorities in Myanmar during 2018."
+  }
+ },
+ {
+  "id": "tb11",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Gambia in 2012?",
+  "gold": {
+   "value": "871",
+   "label": "A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1,406",
+   "label": "1,406 TB cases were notified to national authorities in Gambia during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.614
+  },
+  "far_miss": {
+   "value": "45,864",
+   "label": "45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 51.6
+  },
+  "evidence": "A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012. 1,406 TB cases were notified to national authorities in Gambia during 2012. 45,864 TB cases were notified to national authorities in Ethiopia during 2011.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012.",
+   "ATT_near": "A national TB prevalence survey in Gambia estimated 1,406 prevalent cases of TB in 2012.",
+   "ATT_far": "A national TB prevalence survey in Gambia estimated 45,864 prevalent cases of TB in 2012.",
+   "SUB_near": "1,406 TB cases were notified to national authorities in Gambia during 2012.",
+   "SUB_far": "45,864 TB cases were notified to national authorities in Ethiopia during 2011."
+  }
+ },
+ {
+  "id": "tb12",
+  "question": "How many TB cases were notified to national authorities in Gambia during 2012?",
+  "gold": {
+   "value": "1,406",
+   "label": "1,406 TB cases were notified to national authorities in Gambia during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "871",
+   "label": "A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.38
+  },
+  "far_miss": {
+   "value": "86,989",
+   "label": "A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 60.9
+  },
+  "evidence": "1,406 TB cases were notified to national authorities in Gambia during 2012. A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012. A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009.",
+  "answers": {
+   "correct": "1,406 TB cases were notified to national authorities in Gambia during 2012.",
+   "ATT_near": "871 TB cases were notified to national authorities in Gambia during 2012.",
+   "ATT_far": "86,989 TB cases were notified to national authorities in Gambia during 2012.",
+   "SUB_near": "A national TB prevalence survey in Gambia estimated 871 prevalent cases of TB in 2012.",
+   "SUB_far": "A national TB prevalence survey in Myanmar estimated 86,989 prevalent cases of TB in 2009."
+  }
+ },
+ {
+  "id": "tb13",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Rwanda in 2012?",
+  "gold": {
+   "value": "4,628",
+   "label": "A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3,509",
+   "label": "3,509 TB cases were notified to national authorities in Rwanda during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.242
+  },
+  "far_miss": {
+   "value": "96,750",
+   "label": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 19.9
+  },
+  "evidence": "A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012. 3,509 TB cases were notified to national authorities in Rwanda during 2012. 96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012.",
+   "ATT_near": "A national TB prevalence survey in Rwanda estimated 3,509 prevalent cases of TB in 2012.",
+   "ATT_far": "A national TB prevalence survey in Rwanda estimated 96,750 prevalent cases of TB in 2012.",
+   "SUB_near": "3,509 TB cases were notified to national authorities in Rwanda during 2012.",
+   "SUB_far": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016."
+  }
+ },
+ {
+  "id": "tb14",
+  "question": "How many TB cases were notified to national authorities in Rwanda during 2012?",
+  "gold": {
+   "value": "3,509",
+   "label": "3,509 TB cases were notified to national authorities in Rwanda during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "4,628",
+   "label": "A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.319
+  },
+  "far_miss": {
+   "value": "125,649",
+   "label": "A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 34.8
+  },
+  "evidence": "3,509 TB cases were notified to national authorities in Rwanda during 2012. A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012. A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007.",
+  "answers": {
+   "correct": "3,509 TB cases were notified to national authorities in Rwanda during 2012.",
+   "ATT_near": "4,628 TB cases were notified to national authorities in Rwanda during 2012.",
+   "ATT_far": "125,649 TB cases were notified to national authorities in Rwanda during 2012.",
+   "SUB_near": "A national TB prevalence survey in Rwanda estimated 4,628 prevalent cases of TB in 2012.",
+   "SUB_far": "A national TB prevalence survey in Viet Nam estimated 125,649 prevalent cases of TB in 2007."
+  }
+ },
+ {
+  "id": "tb15",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Thailand in 2012?",
+  "gold": {
+   "value": "56,910",
+   "label": "A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "30,881",
+   "label": "30,881 TB cases were notified to national authorities in Thailand during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.457
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 25.9
+  },
+  "evidence": "A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012. 30,881 TB cases were notified to national authorities in Thailand during 2012. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012.",
+   "ATT_near": "A national TB prevalence survey in Thailand estimated 30,881 prevalent cases of TB in 2012.",
+   "ATT_far": "A national TB prevalence survey in Thailand estimated 1,531,762 prevalent cases of TB in 2012.",
+   "SUB_near": "30,881 TB cases were notified to national authorities in Thailand during 2012.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb16",
+  "question": "How many TB cases were notified to national authorities in Thailand during 2012?",
+  "gold": {
+   "value": "30,881",
+   "label": "30,881 TB cases were notified to national authorities in Thailand during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "56,910",
+   "label": "A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.843
+  },
+  "far_miss": {
+   "value": "326,528",
+   "label": "A national TB prevalence survey in Bangladesh estimated 326,528 prevalent cases of TB in 2015.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 9.6
+  },
+  "evidence": "30,881 TB cases were notified to national authorities in Thailand during 2012. A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012. A national TB prevalence survey in Bangladesh estimated 326,528 prevalent cases of TB in 2015.",
+  "answers": {
+   "correct": "30,881 TB cases were notified to national authorities in Thailand during 2012.",
+   "ATT_near": "56,910 TB cases were notified to national authorities in Thailand during 2012.",
+   "ATT_far": "326,528 TB cases were notified to national authorities in Thailand during 2012.",
+   "SUB_near": "A national TB prevalence survey in Thailand estimated 56,910 prevalent cases of TB in 2012.",
+   "SUB_far": "A national TB prevalence survey in Bangladesh estimated 326,528 prevalent cases of TB in 2015."
+  }
+ },
+ {
+  "id": "tb17",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in United Republic of Tanzania in 2012?",
+  "gold": {
+   "value": "73,344",
+   "label": "A national TB prevalence survey in United Republic of Tanzania estimated 73,344 prevalent cases of TB in 2012.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "24,748",
+   "label": "24,748 TB cases were notified to national authorities in United Republic of Tanzania during 2012.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.663
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 19.9
+  },
+  "evidence": "A national TB prevalence survey in United Republic of Tanzania estimated 73,344 prevalent cases of TB in 2012. 24,748 TB cases were notified to national authorities in United Republic of Tanzania during 2012. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in United Republic of Tanzania estimated 73,344 prevalent cases of TB in 2012.",
+   "ATT_near": "A national TB prevalence survey in United Republic of Tanzania estimated 24,748 prevalent cases of TB in 2012.",
+   "ATT_far": "A national TB prevalence survey in United Republic of Tanzania estimated 1,531,762 prevalent cases of TB in 2012.",
+   "SUB_near": "24,748 TB cases were notified to national authorities in United Republic of Tanzania during 2012.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb18",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Ghana in 2013?",
+  "gold": {
+   "value": "17,729",
+   "label": "A national TB prevalence survey in Ghana estimated 17,729 prevalent cases of TB in 2013.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "7,212",
+   "label": "7,212 TB cases were notified to national authorities in Ghana during 2013.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.593
+  },
+  "far_miss": {
+   "value": "204,384",
+   "label": "204,384 TB cases were notified to national authorities in Indonesia during 2013.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 10.5
+  },
+  "evidence": "A national TB prevalence survey in Ghana estimated 17,729 prevalent cases of TB in 2013. 7,212 TB cases were notified to national authorities in Ghana during 2013. 204,384 TB cases were notified to national authorities in Indonesia during 2013.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Ghana estimated 17,729 prevalent cases of TB in 2013.",
+   "ATT_near": "A national TB prevalence survey in Ghana estimated 7,212 prevalent cases of TB in 2013.",
+   "ATT_far": "A national TB prevalence survey in Ghana estimated 204,384 prevalent cases of TB in 2013.",
+   "SUB_near": "7,212 TB cases were notified to national authorities in Ghana during 2013.",
+   "SUB_far": "204,384 TB cases were notified to national authorities in Indonesia during 2013."
+  }
+ },
+ {
+  "id": "tb19",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Malawi in 2013?",
+  "gold": {
+   "value": "19,379",
+   "label": "A national TB prevalence survey in Malawi estimated 19,379 prevalent cases of TB in 2013.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "7,650",
+   "label": "7,650 TB cases were notified to national authorities in Malawi during 2013.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.605
+  },
+  "far_miss": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 21.1
+  },
+  "evidence": "A national TB prevalence survey in Malawi estimated 19,379 prevalent cases of TB in 2013. 7,650 TB cases were notified to national authorities in Malawi during 2013. 428,214 TB cases were notified to national authorities in China during 2010.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Malawi estimated 19,379 prevalent cases of TB in 2013.",
+   "ATT_near": "A national TB prevalence survey in Malawi estimated 7,650 prevalent cases of TB in 2013.",
+   "ATT_far": "A national TB prevalence survey in Malawi estimated 428,214 prevalent cases of TB in 2013.",
+   "SUB_near": "7,650 TB cases were notified to national authorities in Malawi during 2013.",
+   "SUB_far": "428,214 TB cases were notified to national authorities in China during 2010."
+  }
+ },
+ {
+  "id": "tb20",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Sudan in 2013?",
+  "gold": {
+   "value": "19,709",
+   "label": "A national TB prevalence survey in Sudan estimated 19,709 prevalent cases of TB in 2013.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "5,664",
+   "label": "5,664 TB cases were notified to national authorities in Sudan during 2013.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.713
+  },
+  "far_miss": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 20.7
+  },
+  "evidence": "A national TB prevalence survey in Sudan estimated 19,709 prevalent cases of TB in 2013. 5,664 TB cases were notified to national authorities in Sudan during 2013. 428,214 TB cases were notified to national authorities in China during 2010.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Sudan estimated 19,709 prevalent cases of TB in 2013.",
+   "ATT_near": "A national TB prevalence survey in Sudan estimated 5,664 prevalent cases of TB in 2013.",
+   "ATT_far": "A national TB prevalence survey in Sudan estimated 428,214 prevalent cases of TB in 2013.",
+   "SUB_near": "5,664 TB cases were notified to national authorities in Sudan during 2013.",
+   "SUB_far": "428,214 TB cases were notified to national authorities in China during 2010."
+  }
+ },
+ {
+  "id": "tb21",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Mongolia in 2014?",
+  "gold": {
+   "value": "4,280",
+   "label": "A national TB prevalence survey in Mongolia estimated 4,280 prevalent cases of TB in 2014.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "1,746",
+   "label": "1,746 TB cases were notified to national authorities in Mongolia during 2014.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.592
+  },
+  "far_miss": {
+   "value": "96,750",
+   "label": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 21.6
+  },
+  "evidence": "A national TB prevalence survey in Mongolia estimated 4,280 prevalent cases of TB in 2014. 1,746 TB cases were notified to national authorities in Mongolia during 2014. 96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Mongolia estimated 4,280 prevalent cases of TB in 2014.",
+   "ATT_near": "A national TB prevalence survey in Mongolia estimated 1,746 prevalent cases of TB in 2014.",
+   "ATT_far": "A national TB prevalence survey in Mongolia estimated 96,750 prevalent cases of TB in 2014.",
+   "SUB_near": "1,746 TB cases were notified to national authorities in Mongolia during 2014.",
+   "SUB_far": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016."
+  }
+ },
+ {
+  "id": "tb22",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Zambia in 2014?",
+  "gold": {
+   "value": "27,035",
+   "label": "A national TB prevalence survey in Zambia estimated 27,035 prevalent cases of TB in 2014.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "13,494",
+   "label": "13,494 TB cases were notified to national authorities in Zambia during 2014.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.501
+  },
+  "far_miss": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 14.8
+  },
+  "evidence": "A national TB prevalence survey in Zambia estimated 27,035 prevalent cases of TB in 2014. 13,494 TB cases were notified to national authorities in Zambia during 2014. 428,214 TB cases were notified to national authorities in China during 2010.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Zambia estimated 27,035 prevalent cases of TB in 2014.",
+   "ATT_near": "A national TB prevalence survey in Zambia estimated 13,494 prevalent cases of TB in 2014.",
+   "ATT_far": "A national TB prevalence survey in Zambia estimated 428,214 prevalent cases of TB in 2014.",
+   "SUB_near": "13,494 TB cases were notified to national authorities in Zambia during 2014.",
+   "SUB_far": "428,214 TB cases were notified to national authorities in China during 2010."
+  }
+ },
+ {
+  "id": "tb23",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Zimbabwe in 2014?",
+  "gold": {
+   "value": "30,637",
+   "label": "A national TB prevalence survey in Zimbabwe estimated 30,637 prevalent cases of TB in 2014.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "12,577",
+   "label": "12,577 TB cases were notified to national authorities in Zimbabwe during 2014.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.589
+  },
+  "far_miss": {
+   "value": "428,214",
+   "label": "428,214 TB cases were notified to national authorities in China during 2010.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 13.0
+  },
+  "evidence": "A national TB prevalence survey in Zimbabwe estimated 30,637 prevalent cases of TB in 2014. 12,577 TB cases were notified to national authorities in Zimbabwe during 2014. 428,214 TB cases were notified to national authorities in China during 2010.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Zimbabwe estimated 30,637 prevalent cases of TB in 2014.",
+   "ATT_near": "A national TB prevalence survey in Zimbabwe estimated 12,577 prevalent cases of TB in 2014.",
+   "ATT_far": "A national TB prevalence survey in Zimbabwe estimated 428,214 prevalent cases of TB in 2014.",
+   "SUB_near": "12,577 TB cases were notified to national authorities in Zimbabwe during 2014.",
+   "SUB_far": "428,214 TB cases were notified to national authorities in China during 2010."
+  }
+ },
+ {
+  "id": "tb24",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Kenya in 2015?",
+  "gold": {
+   "value": "143,778",
+   "label": "A national TB prevalence survey in Kenya estimated 143,778 prevalent cases of TB in 2015.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "40,768",
+   "label": "40,768 TB cases were notified to national authorities in Kenya during 2015.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.716
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 9.7
+  },
+  "evidence": "A national TB prevalence survey in Kenya estimated 143,778 prevalent cases of TB in 2015. 40,768 TB cases were notified to national authorities in Kenya during 2015. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Kenya estimated 143,778 prevalent cases of TB in 2015.",
+   "ATT_near": "A national TB prevalence survey in Kenya estimated 40,768 prevalent cases of TB in 2015.",
+   "ATT_far": "A national TB prevalence survey in Kenya estimated 1,531,762 prevalent cases of TB in 2015.",
+   "SUB_near": "40,768 TB cases were notified to national authorities in Kenya during 2015.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb25",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Uganda in 2015?",
+  "gold": {
+   "value": "81,248",
+   "label": "A national TB prevalence survey in Uganda estimated 81,248 prevalent cases of TB in 2015.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "28,721",
+   "label": "28,721 TB cases were notified to national authorities in Uganda during 2015.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.647
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 17.9
+  },
+  "evidence": "A national TB prevalence survey in Uganda estimated 81,248 prevalent cases of TB in 2015. 28,721 TB cases were notified to national authorities in Uganda during 2015. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Uganda estimated 81,248 prevalent cases of TB in 2015.",
+   "ATT_near": "A national TB prevalence survey in Uganda estimated 28,721 prevalent cases of TB in 2015.",
+   "ATT_far": "A national TB prevalence survey in Uganda estimated 1,531,762 prevalent cases of TB in 2015.",
+   "SUB_near": "28,721 TB cases were notified to national authorities in Uganda during 2015.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb26",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Democratic People's Republic of Korea in 2016?",
+  "gold": {
+   "value": "117,803",
+   "label": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "96,750",
+   "label": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.179
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 12.0
+  },
+  "evidence": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016. 96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+   "ATT_near": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 96,750 prevalent cases of TB in 2016.",
+   "ATT_far": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 1,531,762 prevalent cases of TB in 2016.",
+   "SUB_near": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb27",
+  "question": "How many TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016?",
+  "gold": {
+   "value": "96,750",
+   "label": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "117,803",
+   "label": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.218
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 32.7
+  },
+  "evidence": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016. A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "96,750 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "ATT_near": "117,803 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in Democratic People's Republic of Korea during 2016.",
+   "SUB_near": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ },
+ {
+  "id": "tb28",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Myanmar in 2018?",
+  "gold": {
+   "value": "185,070",
+   "label": "A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "111,701",
+   "label": "111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.396
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 7.3
+  },
+  "evidence": "A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018. 111,701 TB cases were notified to national authorities in Myanmar during 2018. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018.",
+   "ATT_near": "A national TB prevalence survey in Myanmar estimated 111,701 prevalent cases of TB in 2018.",
+   "ATT_far": "A national TB prevalence survey in Myanmar estimated 1,531,762 prevalent cases of TB in 2018.",
+   "SUB_near": "111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb29",
+  "question": "How many TB cases were notified to national authorities in Myanmar during 2018?",
+  "gold": {
+   "value": "111,701",
+   "label": "111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "185,070",
+   "label": "A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.657
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 28.2
+  },
+  "evidence": "111,701 TB cases were notified to national authorities in Myanmar during 2018. A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "111,701 TB cases were notified to national authorities in Myanmar during 2018.",
+   "ATT_near": "185,070 TB cases were notified to national authorities in Myanmar during 2018.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in Myanmar during 2018.",
+   "SUB_near": "A national TB prevalence survey in Myanmar estimated 185,070 prevalent cases of TB in 2018.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ },
+ {
+  "id": "tb30",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Viet Nam in 2018?",
+  "gold": {
+   "value": "236,365",
+   "label": "A national TB prevalence survey in Viet Nam estimated 236,365 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "97,902",
+   "label": "97,902 TB cases were notified to national authorities in Viet Nam during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.586
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 5.5
+  },
+  "evidence": "A national TB prevalence survey in Viet Nam estimated 236,365 prevalent cases of TB in 2018. 97,902 TB cases were notified to national authorities in Viet Nam during 2018. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Viet Nam estimated 236,365 prevalent cases of TB in 2018.",
+   "ATT_near": "A national TB prevalence survey in Viet Nam estimated 97,902 prevalent cases of TB in 2018.",
+   "ATT_far": "A national TB prevalence survey in Viet Nam estimated 1,531,762 prevalent cases of TB in 2018.",
+   "SUB_near": "97,902 TB cases were notified to national authorities in Viet Nam during 2018.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb31",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Lesotho in 2019?",
+  "gold": {
+   "value": "8,242",
+   "label": "A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "6,767",
+   "label": "6,767 TB cases were notified to national authorities in Lesotho during 2019.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.179
+  },
+  "far_miss": {
+   "value": "101,838",
+   "label": "101,838 TB cases were notified to national authorities in Pakistan during 2011.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 11.4
+  },
+  "evidence": "A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019. 6,767 TB cases were notified to national authorities in Lesotho during 2019. 101,838 TB cases were notified to national authorities in Pakistan during 2011.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019.",
+   "ATT_near": "A national TB prevalence survey in Lesotho estimated 6,767 prevalent cases of TB in 2019.",
+   "ATT_far": "A national TB prevalence survey in Lesotho estimated 101,838 prevalent cases of TB in 2019.",
+   "SUB_near": "6,767 TB cases were notified to national authorities in Lesotho during 2019.",
+   "SUB_far": "101,838 TB cases were notified to national authorities in Pakistan during 2011."
+  }
+ },
+ {
+  "id": "tb32",
+  "question": "How many TB cases were notified to national authorities in Lesotho during 2019?",
+  "gold": {
+   "value": "6,767",
+   "label": "6,767 TB cases were notified to national authorities in Lesotho during 2019.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "8,242",
+   "label": "A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.218
+  },
+  "far_miss": {
+   "value": "159,638",
+   "label": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 22.6
+  },
+  "evidence": "6,767 TB cases were notified to national authorities in Lesotho during 2019. A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019. A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007.",
+  "answers": {
+   "correct": "6,767 TB cases were notified to national authorities in Lesotho during 2019.",
+   "ATT_near": "8,242 TB cases were notified to national authorities in Lesotho during 2019.",
+   "ATT_far": "159,638 TB cases were notified to national authorities in Lesotho during 2019.",
+   "SUB_near": "A national TB prevalence survey in Lesotho estimated 8,242 prevalent cases of TB in 2019.",
+   "SUB_far": "A national TB prevalence survey in Philippines estimated 159,638 prevalent cases of TB in 2007."
+  }
+ },
+ {
+  "id": "tb33",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Nepal in 2018?",
+  "gold": {
+   "value": "73,144",
+   "label": "A national TB prevalence survey in Nepal estimated 73,144 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "30,096",
+   "label": "30,096 TB cases were notified to national authorities in Nepal during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.589
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 19.9
+  },
+  "evidence": "A national TB prevalence survey in Nepal estimated 73,144 prevalent cases of TB in 2018. 30,096 TB cases were notified to national authorities in Nepal during 2018. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Nepal estimated 73,144 prevalent cases of TB in 2018.",
+   "ATT_near": "A national TB prevalence survey in Nepal estimated 30,096 prevalent cases of TB in 2018.",
+   "ATT_far": "A national TB prevalence survey in Nepal estimated 1,531,762 prevalent cases of TB in 2018.",
+   "SUB_near": "30,096 TB cases were notified to national authorities in Nepal during 2018.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb34",
+  "question": "How many TB cases were notified to national authorities in South Africa during 2018?",
+  "gold": {
+   "value": "199,096",
+   "label": "199,096 TB cases were notified to national authorities in South Africa during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "349,207",
+   "label": "A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.754
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 15.4
+  },
+  "evidence": "199,096 TB cases were notified to national authorities in South Africa during 2018. A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "199,096 TB cases were notified to national authorities in South Africa during 2018.",
+   "ATT_near": "349,207 TB cases were notified to national authorities in South Africa during 2018.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in South Africa during 2018.",
+   "SUB_near": "A national TB prevalence survey in South Africa estimated 349,207 prevalent cases of TB in 2018.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ },
+ {
+  "id": "tb35",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Eswatini in 2017?",
+  "gold": {
+   "value": "2,441",
+   "label": "A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "3,189",
+   "label": "3,189 TB cases were notified to national authorities in Eswatini during 2017.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.306
+  },
+  "far_miss": {
+   "value": "83,168",
+   "label": "83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 33.1
+  },
+  "evidence": "A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017. 3,189 TB cases were notified to national authorities in Eswatini during 2017. 83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017.",
+   "ATT_near": "A national TB prevalence survey in Eswatini estimated 3,189 prevalent cases of TB in 2017.",
+   "ATT_far": "A national TB prevalence survey in Eswatini estimated 83,168 prevalent cases of TB in 2017.",
+   "SUB_near": "3,189 TB cases were notified to national authorities in Eswatini during 2017.",
+   "SUB_far": "83,168 TB cases were notified to national authorities in Mozambique during 2018."
+  }
+ },
+ {
+  "id": "tb36",
+  "question": "How many TB cases were notified to national authorities in Eswatini during 2017?",
+  "gold": {
+   "value": "3,189",
+   "label": "3,189 TB cases were notified to national authorities in Eswatini during 2017.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "2,441",
+   "label": "A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.235
+  },
+  "far_miss": {
+   "value": "117,803",
+   "label": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 35.9
+  },
+  "evidence": "3,189 TB cases were notified to national authorities in Eswatini during 2017. A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017. A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016.",
+  "answers": {
+   "correct": "3,189 TB cases were notified to national authorities in Eswatini during 2017.",
+   "ATT_near": "2,441 TB cases were notified to national authorities in Eswatini during 2017.",
+   "ATT_far": "117,803 TB cases were notified to national authorities in Eswatini during 2017.",
+   "SUB_near": "A national TB prevalence survey in Eswatini estimated 2,441 prevalent cases of TB in 2017.",
+   "SUB_far": "A national TB prevalence survey in Democratic People's Republic of Korea estimated 117,803 prevalent cases of TB in 2016."
+  }
+ },
+ {
+  "id": "tb37",
+  "question": "How many prevalent cases of TB were estimated by the national prevalence survey in Mozambique in 2018?",
+  "gold": {
+   "value": "56,423",
+   "label": "A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "83,168",
+   "label": "83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.474
+  },
+  "far_miss": {
+   "value": "1,531,762",
+   "label": "1,531,762 TB cases were notified to national authorities in India during 2020.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 26.1
+  },
+  "evidence": "A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018. 83,168 TB cases were notified to national authorities in Mozambique during 2018. 1,531,762 TB cases were notified to national authorities in India during 2020.",
+  "answers": {
+   "correct": "A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018.",
+   "ATT_near": "A national TB prevalence survey in Mozambique estimated 83,168 prevalent cases of TB in 2018.",
+   "ATT_far": "A national TB prevalence survey in Mozambique estimated 1,531,762 prevalent cases of TB in 2018.",
+   "SUB_near": "83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+   "SUB_far": "1,531,762 TB cases were notified to national authorities in India during 2020."
+  }
+ },
+ {
+  "id": "tb38",
+  "question": "How many TB cases were notified to national authorities in Mozambique during 2018?",
+  "gold": {
+   "value": "83,168",
+   "label": "83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+   "entity": "cases",
+   "temporal": "FLOW",
+   "unit": "count",
+   "delta": 0.0
+  },
+  "near_miss": {
+   "value": "56,423",
+   "label": "A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 0.322
+  },
+  "far_miss": {
+   "value": "3,260,355",
+   "label": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+   "entity": "cases",
+   "temporal": "STOCK",
+   "unit": "count",
+   "delta": 38.2
+  },
+  "evidence": "83,168 TB cases were notified to national authorities in Mozambique during 2018. A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018. A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020.",
+  "answers": {
+   "correct": "83,168 TB cases were notified to national authorities in Mozambique during 2018.",
+   "ATT_near": "56,423 TB cases were notified to national authorities in Mozambique during 2018.",
+   "ATT_far": "3,260,355 TB cases were notified to national authorities in Mozambique during 2018.",
+   "SUB_near": "A national TB prevalence survey in Mozambique estimated 56,423 prevalent cases of TB in 2018.",
+   "SUB_far": "A national TB prevalence survey in India estimated 3,260,355 prevalent cases of TB in 2020."
+  }
+ }
+]
