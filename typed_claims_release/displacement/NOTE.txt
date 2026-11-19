@@ -1,0 +1,15 @@
+probe_displacement.json
+  57 items, IDMC Global Report on Internal Displacement 2024.
+  Median near delta 0.13, median far delta 75.
+  Temporal operators assigned from a cue-word scheme fixed before authoring,
+  second-annotator validated on 20 items (gold type kappa 1.00,
+  distractor type kappa 1.00, framing purity 20/20 agreement).
+
+questions_surface_ambiguous.json
+  Generator study. "cued" questions disclose the demanded type in their
+  wording; "nocue" questions do not. Membership checked mechanically.
+  Result: all 7 cued questions answered correctly in both runs; all 4 nocue
+  questions erred in at least one run (Fisher exact p = 0.003).
+
+Judge verdicts for this domain are reported in the paper; the raw files live
+with the August cycle submission.

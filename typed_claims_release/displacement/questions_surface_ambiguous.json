@@ -1,0 +1,74 @@
+[
+  {
+    "question": "How many people were displaced by disasters in 2023?",
+    "reference": "26.4 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from probe_v3.json item t05. Watch for STOCK substitution (7.7 million)."
+  },
+  {
+    "question": "How many people are affected by conflict displacement in 2023?",
+    "reference": "20.5 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t04."
+  },
+  {
+    "question": "What number of people are living in displacement because of disasters in 2023?",
+    "reference": "7.7 million people were living in displacement at the end of 2023.",
+    "gold_type": "STOCK",
+    "note": "Gold value from item t03. Watch for FLOW substitution (26.4 million)."
+  },
+  {
+    "question": "How many people were displaced due to non-international armed conflict?",
+    "reference": "14.4 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t06."
+  },
+  {
+    "question": "How many people were displaced due to international armed conflict?",
+    "reference": "4.5 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t07."
+  },
+  {
+    "question": "How many people have been displaced by flooding around the world?",
+    "reference": "9.8 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t08."
+  },
+  {
+    "question": "What is the scale of displacement in Sub-Saharan Africa?",
+    "reference": "34.8 million people were living in displacement at the end of 2023.",
+    "gold_type": "STOCK",
+    "note": "Gold value from item t05 near_miss."
+  },
+  {
+    "question": "How many people are displaced in Europe and Central Asia?",
+    "reference": "7.2 million people were living in displacement at the end of 2023.",
+    "gold_type": "STOCK",
+    "note": "Gold value from item t69."
+  },
+  {
+    "question": "What number of displacements occurred in Europe and Central Asia in 2023?",
+    "reference": "5.1 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t68/t69 pairing."
+  },
+  {
+    "question": "How many people has the Turkiye earthquake displaced?",
+    "reference": "4 million new displacements were recorded during 2023.",
+    "gold_type": "FLOW",
+    "note": "Gold value from item t70. Watch for STOCK substitution (0.822 million)."
+  },
+  {
+    "question": "How many people remain affected by displacement from the Turkiye earthquake?",
+    "reference": "0.822 million people were living in displacement at the end of 2023.",
+    "gold_type": "STOCK",
+    "note": "Gold value from item t71."
+  },
+  {
+    "question": "What is the projected number of internal climate migrants worldwide?",
+    "reference": "216 million people are projected to be displaced by 2050.",
+    "gold_type": "PROJ",
+    "note": "Gold value used as the far-miss throughout probe_v3.json."
+  }
+]

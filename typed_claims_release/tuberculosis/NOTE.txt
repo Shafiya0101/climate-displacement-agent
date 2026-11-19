@@ -1,0 +1,22 @@
+probe_tb.json
+  38 items built from who_prev_notif_source.csv.
+  Median near delta 0.57, median far delta 19.9. 25 STOCK golds, 13 FLOW.
+
+  Types are schema-given: the WHO 'prev' column is a prevalence (STOCK) and
+  'notified' counts cases reported during the year (FLOW). No cue words and
+  no annotator are involved.
+
+  Absolute prevalent cases = prev / 100000 * pop.
+
+  Near distractors: same country, same year, opposite temporal operator.
+  Far distractors: a different country (one survey per country), so they
+  differ in geography as well as temporal operator. The NEAR condition is
+  the clean one.
+
+who_prev_notif_source.csv
+  Unmodified from github.com/GTB-TME/gtbreport2024,
+  path data/ps/prev_notif_2023-07-03.csv
+
+A slimmer variant of probe_tb.json (without the gold/near_miss/far_miss
+metadata blocks) is produced by the Colab notebook. The 'answers' and
+'question' fields are byte-identical between the two.
