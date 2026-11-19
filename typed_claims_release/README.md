@@ -15,10 +15,12 @@ that, the judge verdicts, and everything needed to rebuild both from source.
 ## Contents
 
 ```
-displacement/   probe and generator questions for the IDMC domain
-tuberculosis/   probe and source data for the WHO TB domain
-results/        raw per-item judge verdicts (both judges, TB domain)
-code/           build, run and analysis scripts + a Colab notebook
+displacement/     probe and generator questions for the IDMC domain
+tuberculosis/     probe and source data for the WHO TB domain
+results/          raw per-item judge verdicts (both judges, TB domain)
+code/             build, run and analysis scripts + a Colab notebook
+generator_study/  generator study (paper §7.3): script, raw outputs,
+                  rescoring script and corrected labels
 ```
 
 ---
